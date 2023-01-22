@@ -17,3 +17,4 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 // background-color: rgba(30,144,255, .8);
+// background-color: #1C1C1C;

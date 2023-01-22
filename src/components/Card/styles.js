@@ -9,8 +9,7 @@ export const CardContainer = styled.div`
 		display: flex;
 		flex-direction: column;
 
-		border-radius: 5px;
-		border: 1px solid #FFF;
+		border-radius: 25px;
 	}
 	
 `
@@ -22,7 +21,7 @@ export const CardImage = styled.div`
 	justify-content: center;
 	align-items: center;
 
-	border-bottom: 1px solid #FFF;
+	border-top-left-radius: 5px;
 `
 
 export const CardDepoimento = styled.div`
@@ -36,6 +35,12 @@ export const CardDepoimento = styled.div`
 	justify-content: center;
 	align-items: center;
 	row-gap: 10px;
+
+	background-color: #FFF;
+	color: #000;
+
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 
 	p {
 		text-align: center;

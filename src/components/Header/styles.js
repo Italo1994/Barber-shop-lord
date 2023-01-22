@@ -6,10 +6,15 @@ export const HeaderContainer = styled.header`
 
 @media (max-width: 550px) {
 	height: 10vh;
-	background-color: #FFF;
+	background-color: #1C1C1C;
 
 	display: flex;
 	justify-content: center;
+
+	position: fixed;
+	top: 0;
+	z-index: 2;
+
 }
 `
 
@@ -20,6 +25,7 @@ export const HeaderContent = styled.div`
 	display: flex:
 	justify-content: space-between;
 	align-items: center;
+
 `
 
 export const MenuNavegacao = styled.ul`
@@ -33,11 +39,12 @@ export const MenuNavegacao = styled.ul`
 	width: 100%;
 	height: 100%;
 
-	display: none;
+	box-sizing: border-box;
 }
 `
 
 export const MenuItem = styled.li`
+@media (max-width: 550px) {
 	font-size: 1.020rem;
 	font-weight: 500;
 
@@ -45,6 +52,9 @@ export const MenuItem = styled.li`
 		transform: scale(1.2);
 		transition: transform 1s;
 	}
+
+	display: none;
+}
 `
 
 export const MenuLink = styled.a`
@@ -53,9 +63,25 @@ export const MenuLink = styled.a`
 `
 
 export const Logo = styled.a`
-	font-size: 2rem;
+@media (max-width: 550px) {
+	font-size: 1.5rem;
 	font-weight: 700;
 
 	color: #FFF;
 	text-decoration: none;
+}
+	font-size: 2rem;
+`
+
+export const ButtonMobile = styled.a`
+@media (max-width: 550px) {
+	display: inline-block;
+	max-width: 100px;
+	height: 25px;
+
+	padding: 5px;
+	color: #FFF;
+
+	text-decoration: none;
+}
 `
