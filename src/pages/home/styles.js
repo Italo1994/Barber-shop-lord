@@ -19,7 +19,7 @@ export const HomeContent = styled.div`
 export const ContentImage = styled.div`
 @media (max-width: 550px) {
 	width: 100%;
-	height: 568px;
+	height: 598px;
 	position: relative;
 }
 `
@@ -38,6 +38,7 @@ export const Title = styled.h2`
 	text-align: center;
 	font-size: 2rem;
 	font-weight: 600;
+	color: #000;
 	box-sizing: border-box;
 `
 
@@ -110,6 +111,7 @@ export const BoxServico = styled.div`
 	span {
 		text-align: center;
 		font-size: .9rem;
+		color: #000;
 	}
 }
 `
