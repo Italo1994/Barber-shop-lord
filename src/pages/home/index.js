@@ -3,6 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 
+
 import { HomeContainer, 
 HomeContent, 
 ContentImage,
@@ -19,6 +20,8 @@ import { Header } from '../../components/Header';
 import { Card } from '../../components/Card';
 import { Image } from '../../components/Image';
 import { Button } from '../../components/Button';
+import { Footer } from '../../components/Footer';
+import { Separator } from '../../components/Separator';
 
 // images
 import bannerBarber from '../../assets/capa_mobile.png';
@@ -37,6 +40,7 @@ function Home() {
 	const handleAgendamento = () => {
 		navigate("/agendamento");
 	}
+
 	return(
 		<HomeContainer>
 			<Header />
@@ -65,6 +69,9 @@ function Home() {
 					</AreaServicos>
 				</Servicos>
 			</HomeContent>
+
+			<Separator />
+
 			<HomeContent>
 				<Depoimentos>
 					<Title>Depoimentos</Title>
@@ -76,11 +83,14 @@ function Home() {
 					</AreaDepoimentos>
 				</Depoimentos>
 			</HomeContent>
+
+			<Separator />
+
 			<HomeContent>
 				<Title>Cortes em alta</Title>
 				<Carousel fade>
         			<Carousel.Item interval={1500}>
-          				<Image src={child1} alt="child 1" height={300} />
+          				<Image src={child1} alt="child 1" height={300} border />
           				<Carousel.Caption>
           					<h4>Corte 1</h4>
           				</Carousel.Caption>
@@ -99,6 +109,8 @@ function Home() {
         			</Carousel.Item>
         		</Carousel>
 			</HomeContent>
+
+			<Footer />
 		</HomeContainer>
 	);
 }

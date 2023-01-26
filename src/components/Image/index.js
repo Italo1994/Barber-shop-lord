@@ -1,6 +1,6 @@
 import { ContainerImage } from './styles';
 
-function Image( {src, width, height, alt, gradient } ) {
+function Image( {src, width, height, alt, border } ) {
 	return(
 		<ContainerImage>
 			<img src={src} width={width} height={height} alt={alt} />

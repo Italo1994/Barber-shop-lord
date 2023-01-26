@@ -12,6 +12,7 @@ export const ContainerImage = styled.div`
 
 	img {
 		width: 100%;
+		border-radius: ${props => props.border ? 50+"px" : 0};
 	}
 }
 `
