@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Barber-shop-lord/static/css/main.ababef68.css",
+    "main.js": "/Barber-shop-lord/static/js/main.50c985eb.js",
+    "static/media/child3.png": "/Barber-shop-lord/static/media/child3.01449b479297ee476e14.png",
+    "static/media/child2.png": "/Barber-shop-lord/static/media/child2.b476b44f2dde2976f216.png",
+    "static/media/capa_mobile.png": "/Barber-shop-lord/static/media/capa_mobile.0e5021dff727b08ac97c.png",
+    "static/media/child1.png": "/Barber-shop-lord/static/media/child1.d2d5a1c252b3e17c85e1.png",
+    "static/media/child4.png": "/Barber-shop-lord/static/media/child4.0e3141c558a1ef4eedd1.png",
+    "static/media/barber_banner.png": "/Barber-shop-lord/static/media/barber_banner.558c9a733e604474b60a.png",
+    "index.html": "/Barber-shop-lord/index.html",
+    "static/media/icon-hamburger.svg": "/Barber-shop-lord/static/media/icon-hamburger.5153cb809501d4309c231954bc0f9ec2.svg",
+    "main.ababef68.css.map": "/Barber-shop-lord/static/css/main.ababef68.css.map",
+    "main.50c985eb.js.map": "/Barber-shop-lord/static/js/main.50c985eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ababef68.css",
+    "static/js/main.50c985eb.js"
+  ]
+}
