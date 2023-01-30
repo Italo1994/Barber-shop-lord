@@ -8,11 +8,11 @@ export const ContainerImage = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 50%;
+	border-radius: ${props => props.borderRadius};
 
 	img {
 		width: 100%;
-		border-radius: ${props => props.border ? 50+"px" : 0};
+		border-radius: ${ (props) => props.borderRadius};
 	}
 }
 `

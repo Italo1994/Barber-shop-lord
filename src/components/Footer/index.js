@@ -1,9 +1,9 @@
 import { FooterContainer, FooterContent } from './styles';
 import { MenuLink, Logo } from '../Header/styles';
 
-function Footer() {
+function Footer({ backgroundColor, color }) {
 	return(
-		<FooterContainer>
+		<FooterContainer backgroundColor={backgroundColor} >
 			<FooterContent>
 				<Logo href="#">Pequeno Lord</Logo>
 				<MenuLink href="#">Início</MenuLink>

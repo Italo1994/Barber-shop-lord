@@ -11,7 +11,6 @@ export const FormContainer = styled.div`
 	justify-content: center;
 	row-gap: 25px;
 
-	
 	z-index: 1;
 `
 

@@ -4,7 +4,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 
-import { HomeContainer, 
+import { 
+HomeContainer, 
 HomeContent, 
 ContentImage,
 ContentButton,
@@ -43,11 +44,11 @@ function Home() {
 
 	return(
 		<HomeContainer>
-			<Header />
+			<Header backgroundColor="#5BBAD5" zIndex="3" />
 			<ContentImage>
 				<Image src={bannerBarber} width={360} height={598} alt="Banner Lord" gradient="true" />
 				<ContentButton>
-					<Button value="AGENDAR AGORA" onClick={handleAgendamento} />
+					<Button value="AGENDAR AGORA" backgroundColor="#5BBAD5" hover="#5BBAD569" color="#FFF" onClick={handleAgendamento} />
 				</ContentButton>
 			</ContentImage>
 			<HomeContent>
@@ -68,20 +69,6 @@ function Home() {
 						</BoxServico>
 					</AreaServicos>
 				</Servicos>
-			</HomeContent>
-
-			<Separator />
-
-			<HomeContent>
-				<Depoimentos>
-					<Title>Depoimentos</Title>
-					<AreaDepoimentos>
-						<Card nome="Anne" srcImage={child1} />
-						<Card nome="Brad" srcImage={child2} />
-						<Card nome="Anne" srcImage={child3} />
-						<Card nome="Brad" srcImage={child4} />
-					</AreaDepoimentos>
-				</Depoimentos>
 			</HomeContent>
 
 			<Separator />
@@ -110,7 +97,21 @@ function Home() {
         		</Carousel>
 			</HomeContent>
 
-			<Footer />
+			<Separator />
+
+			<HomeContent>
+				<Depoimentos>
+					<Title>Depoimentos</Title>
+					<AreaDepoimentos>
+						<Card nome="Anne" srcImage={child1} borderRadius="50%" />
+						<Card nome="Brad" srcImage={child2} borderRadius="50%" />
+						<Card nome="Anne" srcImage={child3} borderRadius="50%" />
+						<Card nome="Brad" srcImage={child4} borderRadius="50%" />
+					</AreaDepoimentos>
+				</Depoimentos>
+			</HomeContent>
+
+			<Footer backgroundColor="#5BBAD5" />
 		</HomeContainer>
 	);
 }

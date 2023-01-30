@@ -14,8 +14,8 @@ export const SeparatorContainer = styled.div`
 `
 
 export const SeparatorLine = styled.div`
-	width: 50%;
-	height: 2px;
+	width: 69%;
+	height: 1px;
 
 	background-color: #1C1C1C;
 `

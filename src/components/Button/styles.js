@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const ButtonContainer = styled.button`
 	@media (max-width: 550px) {
-		background-color: #272988;
+		background-color: ${props => props.backgroundColor};
 		border: 1px solid #FFF;
 		border-radius: 10px;
-		color: #FFF;
+		color: ${props => props.color};
 
-		width: 90%;
+		width: 100%;
 		height: 62px;
 
 		font-size: 1.125rem;
@@ -16,7 +16,7 @@ export const ButtonContainer = styled.button`
 		border-radius: 50px;
 
 		&:hover {
-			background-color: #27299060;
+			background-color: ${props => props.hover};
 			cursor: pointer;
 		}
 	}

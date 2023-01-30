@@ -5,7 +5,7 @@ export const InputContainer = styled.div`
 	border-radius: 50px;
 
 	height: 60px;
-	width: 90%;
+	width: 100%;
 
 	input {
 		background-color: transparent;
