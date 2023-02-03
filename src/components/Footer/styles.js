@@ -6,6 +6,20 @@ export const FooterContainer = styled.footer`
 	height: 350px;
 
 	background-color: ${props => props.backgroundColor};
+	display: grid;
+	justify-content: center;
+
+	box-sizing: border-box;
+
+	p {
+		padding-top: 40px;
+		font-size: 1.2rem;
+
+		span {
+			font-weight: 700;
+			font-style: italic;
+		}
+	}
 }
 `
 

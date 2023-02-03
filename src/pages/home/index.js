@@ -103,10 +103,10 @@ function Home() {
 				<Depoimentos>
 					<Title>Depoimentos</Title>
 					<AreaDepoimentos>
-						<Card nome="Anne" srcImage={child1} borderRadius="50%" />
-						<Card nome="Brad" srcImage={child2} borderRadius="50%" />
-						<Card nome="Anne" srcImage={child3} borderRadius="50%" />
-						<Card nome="Brad" srcImage={child4} borderRadius="50%" />
+						<Card nome="Anne" srcImage={child1} borderRadius="20%" />
+						<Card nome="Brad" srcImage={child2} borderRadius="20%" />
+						<Card nome="Anne" srcImage={child3} borderRadius="20%" />
+						<Card nome="Brad" srcImage={child4} borderRadius="20%" />
 					</AreaDepoimentos>
 				</Depoimentos>
 			</HomeContent>
