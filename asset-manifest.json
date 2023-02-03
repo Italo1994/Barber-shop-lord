@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Barber-shop-lord/static/css/main.ababef68.css",
-    "main.js": "/Barber-shop-lord/static/js/main.50c985eb.js",
+    "main.js": "/Barber-shop-lord/static/js/main.3c0cf35d.js",
     "static/media/child3.png": "/Barber-shop-lord/static/media/child3.01449b479297ee476e14.png",
     "static/media/child2.png": "/Barber-shop-lord/static/media/child2.b476b44f2dde2976f216.png",
     "static/media/capa_mobile.png": "/Barber-shop-lord/static/media/capa_mobile.0e5021dff727b08ac97c.png",
@@ -11,10 +11,10 @@
     "index.html": "/Barber-shop-lord/index.html",
     "static/media/icon-hamburger.svg": "/Barber-shop-lord/static/media/icon-hamburger.5153cb809501d4309c231954bc0f9ec2.svg",
     "main.ababef68.css.map": "/Barber-shop-lord/static/css/main.ababef68.css.map",
-    "main.50c985eb.js.map": "/Barber-shop-lord/static/js/main.50c985eb.js.map"
+    "main.3c0cf35d.js.map": "/Barber-shop-lord/static/js/main.3c0cf35d.js.map"
   },
   "entrypoints": [
     "static/css/main.ababef68.css",
-    "static/js/main.50c985eb.js"
+    "static/js/main.3c0cf35d.js"
   ]
 }
