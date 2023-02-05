@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const FooterContainer = styled.footer`
 @media (max-width: 550px) {
 	width: 100%;
-	height: 350px;
+	min-height: 350px;
 
 	background-color: ${props => props.backgroundColor};
 	display: grid;
@@ -13,7 +13,8 @@ export const FooterContainer = styled.footer`
 
 	p {
 		padding-top: 40px;
-		font-size: 1.2rem;
+		font-size: 1rem;
+		color: #FFF;
 
 		span {
 			font-weight: 700;

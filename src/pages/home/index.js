@@ -48,7 +48,7 @@ function Home() {
 			<ContentImage>
 				<Image src={bannerBarber} width={360} height={598} alt="Banner Lord" gradient="true" />
 				<ContentButton>
-					<Button value="AGENDAR AGORA" backgroundColor="#5BBAD5" hover="#5BBAD569" color="#FFF" onClick={handleAgendamento} />
+					<Button value="AGENDAR AGORA" width="69%" height="62px" backgroundColor="#5BBAD5" hover="#5BBAD569" color="#FFF" borderRadius="50px" onClick={handleAgendamento} />
 				</ContentButton>
 			</ContentImage>
 			<HomeContent>
@@ -103,10 +103,10 @@ function Home() {
 				<Depoimentos>
 					<Title>Depoimentos</Title>
 					<AreaDepoimentos>
-						<Card nome="Anne" srcImage={child1} borderRadius="20%" />
-						<Card nome="Brad" srcImage={child2} borderRadius="20%" />
-						<Card nome="Anne" srcImage={child3} borderRadius="20%" />
-						<Card nome="Brad" srcImage={child4} borderRadius="20%" />
+						<Card nome="Anne" srcImage={child1} borderRadius="10%" testimony={true} />
+						<Card nome="Brad" srcImage={child2} borderRadius="10%" testimony={true} />
+						<Card nome="Anne" srcImage={child3} borderRadius="10%" testimony={true} />
+						<Card nome="Brad" srcImage={child4} borderRadius="10%" testimony={true} />
 					</AreaDepoimentos>
 				</Depoimentos>
 			</HomeContent>

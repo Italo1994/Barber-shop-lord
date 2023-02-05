@@ -12,7 +12,7 @@ const Form = ({hasLink}) => {
 	const navigate = useNavigate();
 
 	const onPassHome = () => {
-		navigate('/home');
+		navigate('/');
 	}
 
 	$(document).ready(function() {

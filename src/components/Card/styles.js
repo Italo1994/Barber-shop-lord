@@ -10,6 +10,13 @@ export const CardContainer = styled.div`
 		flex-direction: column;
 
 		border-radius: 25px;
+
+		p {
+			color: #000;
+			text-align: center;
+			padding: 5px 10px;
+			box-sizing: border-box;
+		}
 	}
 	
 `
@@ -42,8 +49,5 @@ export const CardDepoimento = styled.div`
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 
-	p {
-		text-align: center;
-		padding: 0 10px;
-	}
+	
 `

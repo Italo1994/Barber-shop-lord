@@ -7,11 +7,18 @@ export const AgendamentoContainer = styled.div`
 	color: #000;
 
 	overflow-x: hidden;
+
+	box-sizing: border-box;
 `
 
 export const AgendamentoContent = styled.div`
 	width: 100%;
-	height: 100vh;
+	min-height: 69vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: space-between;
 
 	margin-top: 15vh;
 
@@ -20,43 +27,22 @@ export const AgendamentoContent = styled.div`
 	}
 `
 
-export const TabelaAgendamento = styled.table`
-	width: 100%;
+export const ContainerBarbeiro = styled.div`
+	width: 90%;
 	margin: 0 auto;
-	border: 0;
+	min-height: 400px;
+	max-height: 450px;
+	
+	padding-top: 10px;
 
-	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
 
 	box-sizing: border-box;
-`
 
-export const HeaderTabela = styled.th`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	padding: 2px;
-	font-size: .8rem;
-`
-
-export const RowTabela = styled.tr`
-	display: flex;
-	box-sizing: border-box;
-
-	&:nth-child(1n) {
-		background-color: #1C1C1C;
-		color: #FFF;
+	div {
+		background-color: orange;
+		flex: 1;
 	}
-`
-
-export const ColumnTabela = styled.td`
-	text-align: center;
-	flex: 1;
-
-	font-size: .5rem;
-
-	box-sizing: border-box;
-
-	padding: 20px 0;
-
 `

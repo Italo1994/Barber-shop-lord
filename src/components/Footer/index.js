@@ -11,9 +11,8 @@ function Footer({ backgroundColor, color }) {
 				<MenuLink href="#">Agendamento</MenuLink>
 				<MenuLink href="#">Contato</MenuLink>
 				
+				<p>Desenvolvido por <span>Italo Hortiz</span></p>
 			</FooterContent>
-
-			<p>Desenvolvido por <span>Italo Hortiz</span></p>
 		</FooterContainer>
 	);
 }

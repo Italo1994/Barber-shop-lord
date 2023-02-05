@@ -39,6 +39,8 @@ export const MenuNavegacao = styled.ul`
 	width: 100%;
 	height: 100%;
 
+	padding: 0 10px;
+
 	box-sizing: border-box;
 }
 `
@@ -57,6 +59,18 @@ export const MenuNavegacaoMobile = styled.ul`
 	width: 100%;
 	height: 20vh;
 	display: none;
+}
+`
+
+export const ContainerButtonAlter = styled.div`
+@media (max-width: 550px) {
+	display: flex;
+	justify-content: center;
+	column-gap: 2px;
+
+	width: auto;
+
+	flex: 1;
 }
 `
 
@@ -81,13 +95,15 @@ export const MenuLink = styled.a`
 
 export const Logo = styled.a`
 @media (max-width: 550px) {
-	font-size: 2rem;
+	font-size: 1.4rem;
 	font-weight: 700;
 
 	color: #FFF;
 	text-decoration: none;
 
 	padding: 5px;
+
+	flex: 1;
 }
 	font-size: 2rem;
 	font-family: 'Pacifico', cursive;
