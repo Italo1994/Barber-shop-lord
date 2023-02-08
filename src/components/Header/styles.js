@@ -14,6 +14,10 @@ export const HeaderContainer = styled.header`
 	position: fixed;
 	top: 0;
 	z-index: ${props => props.zIndex};
+
+	-webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
 }
 `
 
@@ -30,7 +34,8 @@ export const HeaderContent = styled.div`
 
 export const MenuNavegacao = styled.ul`
 @media (max-width: 550px) {
-	display: flex;
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
 	justify-content: space-around;
 	align-items: center;
 
@@ -62,6 +67,16 @@ export const MenuNavegacaoMobile = styled.ul`
 }
 `
 
+export const ContainerLogo = styled.div`
+@media (max-width: 550px) {
+	width: 100%;
+
+	box-sizing: border-box;
+
+	background-image: url("../../assets/logo.png");
+}
+`
+
 export const ContainerButtonAlter = styled.div`
 @media (max-width: 550px) {
 	display: flex;
@@ -70,7 +85,7 @@ export const ContainerButtonAlter = styled.div`
 
 	width: auto;
 
-	flex: 1;
+	flex: 3;
 }
 `
 

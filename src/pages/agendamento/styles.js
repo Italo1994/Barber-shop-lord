@@ -15,6 +15,8 @@ export const AgendamentoContent = styled.div`
 	width: 100%;
 	min-height: 69vh;
 
+	padding: 50px 0;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -31,7 +33,6 @@ export const ContainerBarbeiro = styled.div`
 	width: 90%;
 	margin: 0 auto;
 	min-height: 400px;
-	max-height: 450px;
 	
 	padding-top: 10px;
 
@@ -42,7 +43,7 @@ export const ContainerBarbeiro = styled.div`
 	box-sizing: border-box;
 
 	div {
-		background-color: orange;
+		
 		flex: 1;
 	}
 `

@@ -5,6 +5,7 @@ import { AgendamentoContainer, AgendamentoContent, ContainerBarbeiro } from './s
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 import { Card } from '../../components/Card';
+import { Title } from '../../components/Title';
 
 import child1 from '../../assets/child1.png';
 import child2 from '../../assets/child2.png';
@@ -24,16 +25,14 @@ function Agendamento() {
 			<Header backgroundColor="#5BBAD5" zIndex="0" />
 			
 			<AgendamentoContent>
-				<h1>Barbeiros</h1>
+				<Title text="Barbeiros" />
 				<ContainerBarbeiro>
-					<Card nome="Anne" srcImage={child1} borderRadius="50%" testimony={false} />
-					<Card nome="Anne" srcImage={child2} borderRadius="50%" testimony={false} />
-					<Card nome="Anne" srcImage={child3} borderRadius="50%" testimony={false} />
-					<Card nome="Anne" srcImage={child4} borderRadius="50%" testimony={false} />
+					<Card nome="Anne" srcImage={child1} borderRadius="30%" testimony={false} />
+					<Card nome="Anne" srcImage={child2} borderRadius="30%" testimony={false} />
+					<Card nome="Anne" srcImage={child3} borderRadius="30%" testimony={false} />
+					<Card nome="Anne" srcImage={child4} borderRadius="30%" testimony={false} />
 				</ContainerBarbeiro>
 			</AgendamentoContent>
-
-			<button onClick={handleHome}>Voltar para a home</button>
 
 			<Footer backgroundColor="#5BBAD5" />
 		</AgendamentoContainer>

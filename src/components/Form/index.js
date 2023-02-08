@@ -26,7 +26,7 @@ const Form = ({hasLink}) => {
 			<Input type="text" placeholder="Usuário" />
 			<Input type="password" placeholder="Senha" />
 			<AreaButton>
-				<Button value="Entrar" />
+				<Button value="Entrar" width="25%" borderRadius="2px" />
 			</AreaButton>
 			<TextLink href="#" onClick={onPassHome}>Ainda não possui uma conta? <strong>Cadastre-se</strong></TextLink>
 		</FormContainer>

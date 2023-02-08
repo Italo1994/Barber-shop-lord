@@ -19,8 +19,26 @@ export const HomeContent = styled.div`
 export const ContentImage = styled.div`
 @media (max-width: 550px) {
 	width: 100%;
-	height: 598px;
+	height: 520px;
+
+	border: 1px solid black;
+
 	position: relative;
+
+	background-color: #5BBAD5;
+
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	-webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
+
+	box-sizing: border-box;
 }
 `
 
@@ -48,7 +66,7 @@ export const Depoimentos = styled.div`
 		min-height: 500px;
 		height: 100%;
 
-		padding-top: 50px;
+		padding: 30px 0;
 
 		display: flex;
 		flex-direction: column;

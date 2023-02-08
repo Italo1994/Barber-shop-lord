@@ -8,6 +8,7 @@ import { Form } from '../../components/Form';
 import { Image } from '../../components/Image';
 
 import bannerBarber from '../../assets/barber_banner.png';
+import logo from '../../assets/logo.png';
 
 import { HiScissors } from 'react-icons/hi';
 
@@ -16,8 +17,9 @@ const Login = () => {
 		<ContainerLogin>
 			<Content>
 				<AreaLogo>
-					<Logo href="#">Pequeno Lord</Logo>
-					<span><HiScissors size={69} color="orange" /></span>
+					
+					<Image src={logo} width="500px" />
+					
 				</AreaLogo>
 				<Form hasLink="false" />
 			</Content>

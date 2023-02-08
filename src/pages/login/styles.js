@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ContainerLogin = styled.div`
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 
 	display: flex;
 	
@@ -19,9 +19,9 @@ export const Content = styled.div`
 	background-color: rgba(0, 0, 0, 0);
 	
 	width: 90%;
-	height: 500px;
+	height: auto;
 
-	padding: 40px 20px;
+	padding: 0 20px;
 	border-radius: 15px;
 
 	span {
