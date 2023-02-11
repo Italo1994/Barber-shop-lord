@@ -5,14 +5,16 @@ export const FooterContainer = styled.footer`
 	width: 100%;
 	min-height: 350px;
 
-	background-color: ${props => props.backgroundColor};
+	background-color: ${props => props.backgroundColor ? props.backgroundColor : "#5BBAD5"};
 	display: grid;
 	justify-content: center;
 
 	box-sizing: border-box;
 
+	padding: 20px 0;
+
 	p {
-		padding-top: 40px;
+		padding-top: 10px;
 		font-size: 1rem;
 		color: #FFF;
 
@@ -37,4 +39,20 @@ export const FooterContent = styled.div`
 	align-items: center;
 	row-gap: 30px;
 }
+`
+
+export const AreaSocial = styled.div`
+	width: 100%;
+	padding: 10px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 15px;
+
+	a {
+		text-decoration: none;
+		color: #FFF;
+	}
+
 `

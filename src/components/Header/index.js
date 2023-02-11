@@ -22,8 +22,8 @@ function Header({ backgroundColor, color, zIndex}) {
 				<MenuNavegacao id="menuPrincipal">
 					<Logo href="/">Pequeno Lord</Logo>
 					<ContainerButtonAlter>
-						<Button value="boy" width="40px" height="27px" backgroundColor="white" borderRadius="5px" />
-						<Button value="girl" width="40px" height="27px" backgroundColor="pink" borderRadius="5px" />
+						<Button value="boy" width="40px" height="27px" backgroundColor="white" borderRadius="5px" icon="boy" />
+						<Button value="girl" width="40px" height="27px" backgroundColor="pink" borderRadius="5px" icon="girl" />
 					</ContainerButtonAlter>
 
 					<MenuItem><MenuLink href="#">Início</MenuLink></MenuItem>

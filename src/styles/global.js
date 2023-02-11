@@ -5,7 +5,6 @@ export const GlobalStyle = createGlobalStyle`
 		margin: 0;
 		padding: 0;
 		font-family: 'Josefin Sans', sans-serif;
-
 	}
 
 	body {

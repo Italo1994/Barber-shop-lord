@@ -27,10 +27,10 @@ function Agendamento() {
 			<AgendamentoContent>
 				<Title text="Barbeiros" />
 				<ContainerBarbeiro>
-					<Card nome="Anne" srcImage={child1} borderRadius="30%" testimony={false} />
-					<Card nome="Anne" srcImage={child2} borderRadius="30%" testimony={false} />
-					<Card nome="Anne" srcImage={child3} borderRadius="30%" testimony={false} />
-					<Card nome="Anne" srcImage={child4} borderRadius="30%" testimony={false} />
+					<Card nome="Victor" srcImage={child1} borderRadius="100%" barber={true} />
+					<Card nome="Anne" srcImage={child2} borderRadius="100%" barber={true} />
+					<Card nome="Jack" srcImage={child3} borderRadius="100%" barber={true} />
+					<Card nome="Lindsay" srcImage={child4} borderRadius="100%" barber={true} />
 				</ContainerBarbeiro>
 			</AgendamentoContent>
 

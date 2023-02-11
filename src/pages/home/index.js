@@ -9,6 +9,7 @@ HomeContainer,
 HomeContent, 
 ContentImage,
 ContentButton,
+ContainerApresentacao,
 Depoimentos, 
 AreaDepoimentos, 
 Servicos, 
@@ -40,6 +41,9 @@ import lord4 from '../../assets/lords04.png';
 // font awesome - icons
 import { HiScissors } from 'react-icons/hi';
 import { FaPumpSoap } from 'react-icons/fa';
+import { FaGamepad } from 'react-icons/fa';
+import { GiPopcorn } from 'react-icons/gi';
+import { MdToys } from 'react-icons/md';
 
 function Home() {
 	const navigate = useNavigate();
@@ -57,27 +61,53 @@ function Home() {
 					<Button value="AGENDAR" width="69%" height="62px" backgroundColor="#5BBAD5" hover="#5BBAD569" color="#FFF" borderRadius="50px" onClick={handleAgendamento} />
 				</ContentButton>
 			</ContentImage>
+
+			<HomeContent>
+				<ContainerApresentacao>
+					<Title text="Sobre o Pequeno Lord" mainTitle="true" size="35px" />
+					<p>
+						O pequeno lord foi criado em 2016, do zero absoluto, com
+						uma forte missão: fazer com que crianças tenham um corte super tranquilo e divertido.
+					</p>
+					<p>
+						Hoje temos o imenso orgulho de, em pouco tempo, ser o melhor salão infantil do Estado Potiguar.
+					</p>
+					<p>
+						Mas isso só foi possibilitado apenas com um trabalho incansável de Tia Dani e Tio Victor focados
+						no segmento de corte infantil. Hoje podemos afirmar que somos referência em toda região.
+					</p>
+					<p>
+						E aí? Você quem escolhe! podemos ajudar sua Lady ou seu Lord?
+					</p>
+				</ContainerApresentacao>
+			</HomeContent>
+
 			<HomeContent>
 				<Servicos>
+				<Title text="O que proporcionamos?" mainTitle="true" size="35px" />
 					<AreaServicos>
-						<Title text="Serviços" mainTitle="true" size="35px" />
+						
 						<BoxServico>
-							<HiScissors size={50} color="black" />
-							<span>Corte padrão</span>
+							<HiScissors size={50} color="#9DF1DF" />
+							<span>Corte Especializado e Interativo</span>
 						</BoxServico>
 						<BoxServico id="middle-icon">
-							<FaPumpSoap size={50} color="blue" />
-							<span>Lavagem</span>
+							<GiPopcorn size={50} color="#9DF1DF" />
+							<span>Pirulito e Pipoca</span>
 						</BoxServico>
 						<BoxServico>
-							<HiScissors size={50} color="#FFC145" />
-							<span>Corte personalizado</span>
+							<FaGamepad size={50} color="#9DF1DF" />
+							<span>Games na hora do corte</span>
+						</BoxServico>
+						<BoxServico>
+							<MdToys size={50} color="#9DF1DF" />
+							<span>Brinquedos e Parquinho no final</span>
 						</BoxServico>
 					</AreaServicos>
 				</Servicos>
 			</HomeContent>
 
-			<Separator />
+			
 
 			<HomeContent>
 				<Title text="Cortes" mainTitle="true" size="35px" />
@@ -108,10 +138,10 @@ function Home() {
 				<Depoimentos>
 					<Title text="Depoimentos" mainTitle="true" size="35px" />
 					<AreaDepoimentos>
-						<Card nome="Anne" srcImage={child1} borderRadius="30%" testimony={true} />
-						<Card nome="Brad" srcImage={child2} borderRadius="30%" testimony={true} />
-						<Card nome="Anne" srcImage={child3} borderRadius="30%" testimony={true} />
-						<Card nome="Brad" srcImage={child4} borderRadius="30%" testimony={true} />
+						<Card nome="Anne" srcImage={child1} borderRadius="10%" testimony={true} />
+						<Card nome="Brad" srcImage={child2} borderRadius="10%" testimony={true} />
+						<Card nome="Anne" srcImage={child3} borderRadius="10%" testimony={true} />
+						<Card nome="Brad" srcImage={child4} borderRadius="10%" testimony={true} />
 					</AreaDepoimentos>
 				</Depoimentos>
 			</HomeContent>

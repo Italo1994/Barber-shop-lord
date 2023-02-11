@@ -4,8 +4,13 @@ export const ContainerTitle = styled.div`
 	width: 100%;
 	height: auto;
 
+	padding: 40px 0;
+
 	font-size: ${props => props.size};
-	font-family: 'Pacifico', cursive;
+
+	h1 {
+		font-family: 'Pacifico', cursive;
+	}
 	
 	color: #000;
 

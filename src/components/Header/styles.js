@@ -6,7 +6,7 @@ export const HeaderContainer = styled.header`
 	width: 100%;
 	
 	height: 10vh;
-	background-color: ${props => props.backgroundColor};
+	background-color: ${props => props.backgroundColor ? props.backgroundColor : "#5BBAD5" };
 
 	display: flex;
 	justify-content: center;
@@ -110,7 +110,7 @@ export const MenuLink = styled.a`
 
 export const Logo = styled.a`
 @media (max-width: 550px) {
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	font-weight: 700;
 
 	color: #FFF;

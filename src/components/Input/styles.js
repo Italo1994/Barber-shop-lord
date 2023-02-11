@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const InputContainer = styled.div`
-	border: 1px solid #FFF;
-	border-radius: 50px;
+	border-bottom: 1px solid #FFF;
+	border-radius: 20px;
+	outline: 0;
 
 	height: 60px;
 	width: 100%;
@@ -10,6 +11,7 @@ export const InputContainer = styled.div`
 	input {
 		background-color: transparent;
 		border: 0;
+
 		width: 100%;
 		height: 60px;
 		padding: 0 20px;
@@ -21,6 +23,11 @@ export const InputContainer = styled.div`
 	input::placeholder {
 		color: #FFF;
 	}
+
+	&:hover {
+		border: 1px solid #FFF;
+	}
+
 `
 
 export const Row = styled.div`

@@ -21,7 +21,7 @@ const Login = () => {
 					<Image src={logo} width="500px" />
 					
 				</AreaLogo>
-				<Form hasLink="false" />
+				<Form hasLink="false" login="true" />
 			</Content>
 		</ContainerLogin>
 	);

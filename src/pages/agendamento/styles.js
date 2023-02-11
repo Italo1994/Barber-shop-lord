@@ -15,7 +15,7 @@ export const AgendamentoContent = styled.div`
 	width: 100%;
 	min-height: 69vh;
 
-	padding: 50px 0;
+	padding-bottom: 50px;
 
 	display: flex;
 	flex-direction: column;
@@ -37,8 +37,9 @@ export const ContainerBarbeiro = styled.div`
 	padding-top: 10px;
 
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
+	grid-template-columns: 1fr;
+	align-items: flex-start;
+	row-gap: 20px;
 
 	box-sizing: border-box;
 

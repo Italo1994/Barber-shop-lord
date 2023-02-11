@@ -4,7 +4,7 @@ export const CardContainer = styled.div`
 	
 	@media (max-width: 550px) {
 		width: 100%;
-		height: auto;
+		min-height: 200px;
 		
 
 		display: flex;
@@ -12,9 +12,12 @@ export const CardContainer = styled.div`
 
 		
 		border: 1px solid #B3B3B3;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
 
 		p {
 			color: #FFF;
+			font-size: 1rem;
 			text-align: left;
 			padding: 5px 10px;
 			box-sizing: border-box;
@@ -25,6 +28,7 @@ export const CardContainer = styled.div`
 
 export const CardImage = styled.div`
 	width: 100%;
+	height: auto;
 	
 	display: flex;
 	justify-content: center;
@@ -35,21 +39,30 @@ export const CardImage = styled.div`
 
 export const CardDepoimento = styled.div`
 	width: 100%;
-	height: 100%;
+	height: auto;
 
 	padding: 10px 10px;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	row-gap: 10px;
 
-	background-color: orange;
-	color: #FFF;
+	background-color: #5BBAD5;
+	color: #000;
 
 	border-top: 1px solid #F18836;
 
-	border-bottom-right-radius: 20px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+`
 
+export const CardInformacoes = styled.div`
+	display: flex;
+	padding: 10px;
+	justify-content: flex-start;
+	align-items: center;
+
+	color: #FFF;
 `
