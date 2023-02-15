@@ -4,6 +4,7 @@ export const HeaderContainer = styled.header`
 
 @media (max-width: 550px) {
 	width: 100%;
+	max-width: 100%;
 	
 	height: 10vh;
 	background-color: ${props => props.backgroundColor ? props.backgroundColor : "#5BBAD5" };
@@ -15,6 +16,7 @@ export const HeaderContainer = styled.header`
 	top: 0;
 	z-index: ${props => props.zIndex};
 
+
 	-webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
@@ -24,6 +26,7 @@ export const HeaderContainer = styled.header`
 export const HeaderContent = styled.div`
 @media (max-width: 550px) {
 	width: 100%;
+	max-width: 100%;
 	height: 100%;
 
 	display: flex:

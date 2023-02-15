@@ -20,7 +20,7 @@ export const Content = styled.div`
 	background-color: rgba(0, 0, 0, 0);
 	
 	width: 90%;
-	height: 100vh;
+	min-height: 100vh;
 
 	margin: 11vh auto;
 	padding: 40px 20px;

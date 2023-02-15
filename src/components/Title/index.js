@@ -1,6 +1,6 @@
 import { ContainerTitle } from './styles';
 
-function Title( { text, mainTitle, size } ) {
+function Title( { text, mainTitle, size, center, color } ) {
 	if(mainTitle) {
 		return(
 			<ContainerTitle>

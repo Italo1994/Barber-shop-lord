@@ -7,18 +7,26 @@ export const FormContainer = styled.div`
 	
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	row-gap: 25px;
 
 	color: ${props => props.color ? props.color : "#FFF" };
 
 	z-index: 1;
+
+	label {
+		color: #000;
+		font-weight: 700;
+		padding-left: 10px;
+	}
 `
 
 export const Title = styled.h1`
-	color: ${props => props.color ? props.color : "#FFF" };
+	color: #FFF;
+	text-align: center;
 	font-weight: 700;
+	width: 100%;
 `
 
 export const AreaButton = styled.div`

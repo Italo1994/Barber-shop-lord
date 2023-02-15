@@ -2,18 +2,18 @@ import { ContainerCadastro, Content } from './styles';
 
 import { Form } from '../../components/Form';
 import { Image } from '../../components/Image';
+import { Title } from '../../components/Title';
 import { Header } from '../../components/Header';
-import { Footer } from '../../components/Footer';
+import { Footer } from '../../components/Footer'
 
 const Cadastro = () => {
 	return(
 		<ContainerCadastro>
 			<Header />
 			<Content>
-				<h1>Cadastre-se</h1>
+				<Title text="Faça seu cadastro" mainTitle={true} color="white" />
 				<Form cadastro="true" color="#000" />
 			</Content>
-			
 		</ContainerCadastro>
 	);
 }

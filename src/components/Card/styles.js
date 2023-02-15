@@ -4,16 +4,14 @@ export const CardContainer = styled.div`
 	
 	@media (max-width: 550px) {
 		width: 100%;
-		min-height: 200px;
+		min-height: 150px;
 		
 
 		display: flex;
-		flex-direction: column;
+		flex-direction: ${props => props.direction ? props.direction : "column"};
 
 		
 		border: 1px solid #B3B3B3;
-		border-bottom-right-radius: 10px;
-		border-bottom-left-radius: 10px;
 
 		p {
 			color: #FFF;
@@ -53,9 +51,6 @@ export const CardDepoimento = styled.div`
 	color: #000;
 
 	border-top: 1px solid #F18836;
-
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
 `
 
 export const CardInformacoes = styled.div`

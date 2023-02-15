@@ -24,6 +24,7 @@ import { Button } from '../../components/Button';
 import { Footer } from '../../components/Footer';
 import { Separator } from '../../components/Separator';
 import { Title } from '../../components/Title';
+import { Map } from '../../components/Map';
 
 // images
 import bannerBarber from '../../assets/capa_mobile.png';
@@ -144,6 +145,11 @@ function Home() {
 						<Card nome="Brad" srcImage={child4} borderRadius="10%" testimony={true} />
 					</AreaDepoimentos>
 				</Depoimentos>
+			</HomeContent>
+
+			<HomeContent>
+				<Title text="Localização" />
+				<Map />
 			</HomeContent>
 
 			<Footer backgroundColor="#5BBAD5" />
