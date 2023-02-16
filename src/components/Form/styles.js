@@ -39,7 +39,7 @@ export const AreaButton = styled.div`
 
 export const TextLink = styled.a`
 	display: inline-block;
-	width: 200px;
+	width: 100%;
 
 	margin: 0 auto;
 
@@ -49,4 +49,9 @@ export const TextLink = styled.a`
 	color: lightyellow;
 	text-align: center;
 	text-decoration: none;
+
+	span {
+		color: yellow;
+		font-weight: 700;
+	}
 `

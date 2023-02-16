@@ -9,7 +9,7 @@ export const ContainerTitle = styled.div`
 	font-size: ${props => props.size};
 
 	h1, h2 {
-		font-family: 'Pacifico', cursive;
+		font-family: 'Josefin Sans', sans-serif;
 		text-align: ${props => props.align ? props.align : 'center'};
 		color: ${props => props.color ? props.color : "black"};
 	}

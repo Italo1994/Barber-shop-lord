@@ -19,12 +19,13 @@ export const HorariosContent = styled.div`
 
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: space-between;
 
-	margin-top: 15vh;
+	margin-top: 11vh;
 
 	h1 {
 		text-align: center;
+		color: #000;
 	}
 `

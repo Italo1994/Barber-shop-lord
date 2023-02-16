@@ -32,9 +32,9 @@ const Form = ({hasLink, color, login, cadastro}) => {
 				<Input type="text" placeholder="Usuário" />
 				<Input type="password" placeholder="Senha" />
 				<AreaButton>
-					<Button value="ENTRAR" width="50%" borderRadius="5px" />
+					<Button value="ENTRAR" width="50%" height="40px" borderRadius="5px" />
 				</AreaButton>
-				<TextLink href="#" onClick={redirecionarCadastro}>Ainda não possui uma conta? <strong>Cadastre-se</strong></TextLink>
+				<TextLink href="#" onClick={redirecionarCadastro}>Ainda não possui uma conta? <span>Cadastre-se</span></TextLink>
 			</FormContainer>
 		);
 	}
@@ -53,7 +53,7 @@ const Form = ({hasLink, color, login, cadastro}) => {
 			<label for="nome">Senha:</label>
 			<Input type="password" placeholder=" senha" name="senha" />
 			<AreaButton>
-				<Button value="CADASTRAR" onClick={onSubmit} width="50%" borderRadius="10px" />
+				<Button value="CADASTRAR" onClick={onSubmit} width="50%" height="40px" borderRadius="10px" />
 			</AreaButton>
 		</FormContainer>
 		);

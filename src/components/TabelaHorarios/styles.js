@@ -2,16 +2,15 @@ import styled from 'styled-components';
 
 export const ContainerTabelaHorarios = styled.div`
 	width: 100%;
-	height: 400px;
+	min-height: 400px;
 `
 
-export const TabelaHorarios = styled.div`
+export const TabelaContent = styled.div`
 	width: 100%;
-	height: 100%;
 
 	padding: 0 20px;
 
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	
+	gap: 15px;
 `

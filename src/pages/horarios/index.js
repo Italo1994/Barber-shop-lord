@@ -6,6 +6,8 @@ import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 import { Title } from '../../components/Title';
 
+import { TabelaHorarios } from '../../components/TabelaHorarios';
+
 const urlParams = new URLSearchParams(window.location.search);
 console.log(urlParams);
 
@@ -16,7 +18,11 @@ function Horarios({nome}) {
 	return(
 		<HorariosContainer>
 			<Header />
-
+			<HorariosContent>
+				<Title text="Horários de" />
+				<TabelaHorarios />
+			</HorariosContent>
+			<Footer />
 		</HorariosContainer>
 	);
 }
