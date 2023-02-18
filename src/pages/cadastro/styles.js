@@ -34,6 +34,8 @@ export const Content = styled.div`
 
 	h1 {
 		text-align: center;
+		color: #FFF;
+		margin-bottom: 69px;
 	}
 }
 `

@@ -18,6 +18,7 @@ export const InputContainer = styled.div`
 
 		color: #FFF;
 		font-size: 1rem;
+		outline: none;
 	}
 
 	input::placeholder {

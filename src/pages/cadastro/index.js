@@ -11,7 +11,7 @@ const Cadastro = () => {
 		<ContainerCadastro>
 			<Header />
 			<Content>
-				<Title text="Faça seu cadastro" mainTitle={true} color="white" />
+				<h1>Faça seu cadastro</h1>
 				<Form cadastro="true" color="#000" />
 			</Content>
 		</ContainerCadastro>

@@ -34,6 +34,7 @@ const Form = ({hasLink, color, login, cadastro}) => {
 				<AreaButton>
 					<Button value="ENTRAR" width="50%" height="40px" borderRadius="5px" />
 				</AreaButton>
+				<TextLink href="#"><span id="esqueceuSenha">Esqueceu a senha?</span></TextLink>
 				<TextLink href="#" onClick={redirecionarCadastro}>Ainda não possui uma conta? <span>Cadastre-se</span></TextLink>
 			</FormContainer>
 		);
@@ -42,16 +43,18 @@ const Form = ({hasLink, color, login, cadastro}) => {
 	if(cadastro) {
 		return(
 		<FormContainer>
-			<label for="nome">Nome:</label>
-			<Input type="text" placeholder=" nome completo" name="nome" />
-			<label for="email">E-mail:</label>
-			<Input type="email" placeholder=" usuario@gmail.com" name="email" />
-			<label for="telefone">Telefone:</label>
-			<Input type="tel" placeholder=" 84999991234" name="telefone" />
-			<label for="usuario">Usuário:</label>
-			<Input type="text" placeholder="ex: usuario1234" name="usuario" />
-			<label for="nome">Senha:</label>
-			<Input type="password" placeholder=" senha" name="senha" />
+			
+			<Input type="text" placeholder=" Nome" name="nome" />
+			<br/>
+			<Input type="text" placeholder=" Sobrenome" name="sobrenome" />
+			<br/>
+			<Input type="email" placeholder=" E-mail" name="email" />
+			<br/>
+			<Input type="tel" placeholder=" Telefone" name="telefone" />
+			<br/>
+			<Input type="text" placeholder="Usuário" name="usuario" />
+			<br/>
+			<Input type="password" placeholder=" Senha" name="senha" />
 			<AreaButton>
 				<Button value="CADASTRAR" onClick={onSubmit} width="50%" height="40px" borderRadius="10px" />
 			</AreaButton>

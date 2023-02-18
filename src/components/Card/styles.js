@@ -51,6 +51,16 @@ export const CardDepoimento = styled.div`
 	color: #000;
 
 	border-top: 1px solid #F18836;
+
+	div {
+		display: flex;
+		column-gap: 2px;
+
+		span {
+			display: inline-block;
+			flex: 1;
+		}
+	}
 `
 
 export const CardInformacoes = styled.div`

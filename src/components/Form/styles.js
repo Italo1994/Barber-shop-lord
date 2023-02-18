@@ -54,4 +54,9 @@ export const TextLink = styled.a`
 		color: yellow;
 		font-weight: 700;
 	}
+
+	span#esqueceuSenha {
+		text-decoration: underline;
+		color: #FFF;
+	}
 `

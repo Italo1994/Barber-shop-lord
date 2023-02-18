@@ -9,6 +9,8 @@ import { Button } from '../../components/Button';
 
 import bannerBarber from '../../assets/barber_banner.png';
 
+import { AiFillStar } from 'react-icons/ai';
+
 function Card({nome, srcImage, borderRadius, direction, testimony, barber}) {
 
 	const navigate = useNavigate();
@@ -25,7 +27,7 @@ function Card({nome, srcImage, borderRadius, direction, testimony, barber}) {
 				</CardImage>
 				<CardDepoimento>
 					<p><strong>Nome</strong>: {nome}</p>
-					<p>Lorem ipsum solor sit amet</p>
+					<div> <span><AiFillStar size={18} color="yellow" /></span> <span><AiFillStar size={18} color="yellow" /> </span> <span> <AiFillStar size={18} color="yellow" /> </span> <span> <AiFillStar size={18} color="yellow" /> </span> <span> <AiFillStar size={18} color="yellow" /> </span> </div>
 				</CardDepoimento>
 			</CardContainer>
 		);
@@ -39,7 +41,7 @@ function Card({nome, srcImage, borderRadius, direction, testimony, barber}) {
 				</CardImage>
 				<CardDepoimento>
 					<p><strong>Nome</strong>: {nome}</p>
-					<Button value="Ver horários" onClick={buscarHorarios} width="100%" height="27px" backgroundColor="#FFD700" color="#000" borderRadius="5px" />
+					<Button value="Ver horários" onClick={buscarHorarios} width="100%" height="8vh" backgroundColor="#FFD700" color="#000" borderRadius="5px" />
 				</CardDepoimento>
 			</CardContainer>
 		);
