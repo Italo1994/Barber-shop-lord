@@ -10,6 +10,9 @@ export const CardContainer = styled.div`
 		display: flex;
 		flex-direction: ${props => props.direction ? props.direction : "column"};
 
+		-webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
 		
 		border: 1px solid #B3B3B3;
 

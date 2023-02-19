@@ -85,7 +85,7 @@ function Home() {
 
 			<HomeContent>
 				<Servicos>
-				<Title text="O que proporcionamos?" mainTitle="true" size="35px" />
+				<Title text="O Que Proporcionamos?" mainTitle="true" size="35px" />
 					<AreaServicos>
 						
 						<BoxServico>
@@ -114,7 +114,7 @@ function Home() {
 				<Title text="Cortes" mainTitle="true" size="35px" />
 				<Carousel fade>
         			<Carousel.Item interval={5000}>
-          				<Image src={child1} alt="child 1" height={300} border />
+          				<Image src={child3} alt="child 1" height={300} border />
           				<Carousel.Caption>
           					<h4>Corte 1</h4>
           				</Carousel.Caption>
