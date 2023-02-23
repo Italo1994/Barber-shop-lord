@@ -10,7 +10,7 @@ function Footer({ backgroundColor, color }) {
 			<FooterContent>
 				<Logo href="#">Pequeno Lord</Logo>
 				<MenuLink href="#">Início</MenuLink>
-				<MenuLink href="#">Cortes</MenuLink>
+				<MenuLink href="/cortes">Cortes</MenuLink>
 				<MenuLink href="#">Agendamento</MenuLink>
 				<MenuLink href="#">Contato</MenuLink>
 

@@ -11,12 +11,26 @@ const Form = ({hasLink, color, login, cadastro}) => {
 
 	const navigate = useNavigate();
 
-	const redirecionarCadastro = () => {
-		navigate('/cadastro');
+	const onSubmit = (e) => {
+		e.preventDefault();
+		const dadosUsuario = {
+			nome: e.target.elements.nome.value,
+			sobrenome: e.target.elements.sobrenome.value,
+			email: e.target.elements.email.value,
+			telefone: e.target.elements.telefone.value,
+			usuario: e.target.elements.usuario.value,
+			senha: e.target.elements.senha.value
+		}
+
+		console.log(dadosUsuario);
+
+		alert("Usuário cadastrado com sucesso!");
+
+		navigate('/login');
 	}
 
-	const onSubmit = () => {
-		alert("Usuário cadastrado com sucesso!");
+	const redirecionarCadastro = () => {
+		navigate('/cadastro');
 	}
 
 	$(document).ready(function() {
@@ -42,7 +56,7 @@ const Form = ({hasLink, color, login, cadastro}) => {
 
 	if(cadastro) {
 		return(
-		<FormContainer>
+		<FormContainer onSubmit={onSubmit}>
 			
 			<Input type="text" placeholder=" Nome" name="nome" />
 			<br/>
@@ -56,7 +70,7 @@ const Form = ({hasLink, color, login, cadastro}) => {
 			<br/>
 			<Input type="password" placeholder=" Senha" name="senha" />
 			<AreaButton>
-				<Button value="CADASTRAR" onClick={onSubmit} width="50%" height="40px" borderRadius="10px" />
+				<Button type="submit" value="CADASTRAR" width="50%" height="40px" borderRadius="10px" />
 			</AreaButton>
 		</FormContainer>
 		);

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ContainerImage = styled.div`
 @media (max-width: 550px) {
 	width: 100%;
-	height: auto;
+	min-height: 50px;
 	
 	display: flex;
 	justify-content: center;
@@ -11,6 +11,8 @@ export const ContainerImage = styled.div`
 	border-radius: ${props => props.borderRadius};
 
 	img {
+		width: ${ (props) => props.width};
+		height: ${ (props) => props.height};
 		border-radius: ${ (props) => props.borderRadius};
 	}
 }

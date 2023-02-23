@@ -34,10 +34,6 @@ import child3 from '../../assets/child3.png';
 import child4 from '../../assets/child4.png';
 import logo from '../../assets/logo.png';
 
-import lord1 from '../../assets/lords01.png';
-import lord2 from '../../assets/lords02.png';
-import lord3 from '../../assets/lords03.png';
-import lord4 from '../../assets/lords04.png';
 
 // font awesome - icons
 import { HiScissors } from 'react-icons/hi';
@@ -65,7 +61,7 @@ function Home() {
 
 			<HomeContent>
 				<ContainerApresentacao>
-					<Title text="Sobre o Pequeno Lord" mainTitle="true" size="35px" />
+					<Title text="SOBRE O PEQUENO LORD" mainTitle="true" size="35px" />
 					<p>
 						O pequeno lord foi criado em 2016, do zero absoluto, com
 						uma forte missão: fazer com que crianças tenham um corte super tranquilo e divertido.
@@ -85,7 +81,7 @@ function Home() {
 
 			<HomeContent>
 				<Servicos>
-				<Title text="O Que Proporcionamos?" mainTitle="true" size="35px" />
+				<Title text="O QUE PROPORCIONAMOS?" mainTitle="true" size="35px" />
 					<AreaServicos>
 						
 						<BoxServico>
@@ -111,7 +107,7 @@ function Home() {
 			
 
 			<HomeContent>
-				<Title text="Cortes" mainTitle="true" size="35px" />
+				<Title text="CORTES" mainTitle="true" size="35px" />
 				<Carousel fade>
         			<Carousel.Item interval={5000}>
           				<Image src={child3} alt="child 1" height={300} border />
@@ -137,18 +133,18 @@ function Home() {
 
 			<HomeContent>
 				<Depoimentos>
-					<Title text="Depoimentos" mainTitle="true" size="35px" />
+					<Title text="DEPOIMENTOS" mainTitle="true" size="35px" />
 					<AreaDepoimentos>
-						<Card nome="Anne" srcImage={child1} borderRadius="10%" testimony={true} />
-						<Card nome="Brad" srcImage={child2} borderRadius="10%" testimony={true} />
-						<Card nome="Anne" srcImage={child3} borderRadius="10%" testimony={true} />
-						<Card nome="Brad" srcImage={child4} borderRadius="10%" testimony={true} />
+						<Card nome="Anne" widthImg="100%" heightImg="100%" srcImage={child1} borderRadius="10%" testimony={true} />
+						<Card nome="Brad" widthImg="100%" heightImg="100%" srcImage={child2} borderRadius="10%" testimony={true} />
+						<Card nome="Anne" widthImg="100%" heightImg="100%" srcImage={child3} borderRadius="10%" testimony={true} />
+						<Card nome="Brad" widthImg="100%" heightImg="100%" srcImage={child4} borderRadius="10%" testimony={true} />
 					</AreaDepoimentos>
 				</Depoimentos>
 			</HomeContent>
 
 			<HomeContent>
-				<Title text="Localização" />
+				<Title text="LOCALIZAÇÃO" />
 				<Map />
 			</HomeContent>
 

@@ -29,7 +29,7 @@ export const CardContainer = styled.div`
 
 export const CardImage = styled.div`
 	width: 100%;
-	height: auto;
+	height: 100%;
 	
 	display: flex;
 	justify-content: center;

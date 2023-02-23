@@ -1,11 +1,9 @@
-import { SeparatorContainer, SeparatorLine } from './styles';
+import { SeparatorContainer } from './styles';
 
 function Separator() {
 	return(
 		<SeparatorContainer>
-			<SeparatorLine>
-
-			</SeparatorLine>
+		
 		</SeparatorContainer>
 	);
 }

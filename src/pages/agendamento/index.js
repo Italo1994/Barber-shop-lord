@@ -7,10 +7,10 @@ import { Footer } from '../../components/Footer';
 import { Card } from '../../components/Card';
 import { Title } from '../../components/Title';
 
-import tioLucas from '../../assets/child1.png';
-import tioRivan from '../../assets/child2.png';
-import tiaTamise from '../../assets/child3.png';
-import tiaDani from '../../assets/child4.png';
+import tioLucas from '../../assets/colaboradores/1.png';
+import tioRivan from '../../assets/colaboradores/2.png';
+import tiaTamise from '../../assets/colaboradores/3.png';
+import tiaDani from '../../assets/colaboradores/6.png';
 
 function Agendamento() {
 	const navigate = useNavigate();
@@ -25,12 +25,12 @@ function Agendamento() {
 			<Header backgroundColor="#5BBAD5" zIndex="0" />
 			
 			<AgendamentoContent>
-				<Title text="Realize seu agendamento" align="left" />
+				<Title text="Agendamento" align="left" />
 				<ContainerBarbeiro>
-					<Card nome="victor" srcImage={tioLucas} borderRadius="100%" direction="row" barber={true} />
-					<Card nome="anne" srcImage={tioRivan} borderRadius="100%" barber={true} />
-					<Card nome="jack" srcImage={tiaTamise} borderRadius="100%" barber={true} />
-					<Card nome="lindsay" srcImage={tiaDani} borderRadius="100%" barber={true} />
+					<Card nome="Tio Lucas" widthImg="100%" heightImg="100%" srcImage={tioLucas} borderRadius="" direction="row" barber={true} />
+					<Card nome="Tio Rivan" widthImg="100%" heightImg="100%" srcImage={tioRivan} borderRadius="" barber={true} />
+					<Card nome="Tia Tamize" widthImg="100%" heightImg="100%" srcImage={tiaTamise} borderRadius="" barber={true} />
+					<Card nome="Tia Dani" widthImg="100%" heightImg="100%" srcImage={tiaDani} borderRadius="" barber={true} />
 				</ContainerBarbeiro>
 			</AgendamentoContent>
 

@@ -11,7 +11,7 @@ import bannerBarber from '../../assets/barber_banner.png';
 
 import { AiFillStar } from 'react-icons/ai';
 
-function Card({nome, srcImage, borderRadius, direction, testimony, barber}) {
+function Card({nome, widthImg, heightImg, srcImage, borderRadius, direction, testimony, barber}) {
 
 	const navigate = useNavigate();
 
@@ -23,7 +23,7 @@ function Card({nome, srcImage, borderRadius, direction, testimony, barber}) {
 		return(
 			<CardContainer>
 				<CardImage>
-					<Image src={srcImage} width={100} height={100} alt="Banner Lord" borderRadius={borderRadius} />
+					<Image src={srcImage} width={widthImg} height={heightImg} alt="Banner Lord" borderRadius={borderRadius} />
 				</CardImage>
 				<CardDepoimento>
 					<p><strong>Nome</strong>: {nome}</p>
@@ -37,10 +37,10 @@ function Card({nome, srcImage, borderRadius, direction, testimony, barber}) {
 		return(
 			<CardContainer>
 				<CardImage>
-					<Image src={srcImage} width={120} height={120} alt="Banner Lord" borderRadius={borderRadius} />
+					<Image src={srcImage} width={widthImg} height={heightImg} alt="Banner Lord" borderRadius={borderRadius} />
 				</CardImage>
 				<CardDepoimento>
-					<p><strong>Nome</strong>: {nome}</p>
+					<p><strong>{nome}</strong></p>
 					<Button value="Ver horários" onClick={buscarHorarios} width="100%" height="8vh" backgroundColor="#FFD700" color="#000" borderRadius="5px" />
 				</CardDepoimento>
 			</CardContainer>

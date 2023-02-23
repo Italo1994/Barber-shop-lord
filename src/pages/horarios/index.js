@@ -1,4 +1,5 @@
 import { useSearchParams } from 'react-router-dom';
+import { useState } from 'react';
 
 import { HorariosContainer, HorariosContent } from './styles';
 
