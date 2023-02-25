@@ -1,8 +1,8 @@
 import styled from 'styled-components';
+import buttonMobile from '../../assets/icon-hamburger.svg';
 
 export const HeaderContainer = styled.header`
 
-@media (max-width: 550px) {
 	width: 100%;
 	max-width: 100%;
 	
@@ -12,19 +12,20 @@ export const HeaderContainer = styled.header`
 	display: flex;
 	justify-content: center;
 
-	position: fixed;
-	top: 0;
 	z-index: ${props => props.zIndex};
-
 
 	-webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
+
+@media (max-width: 540px) {
+	position: fixed;
+	top: 0;
 }
+
 `
 
 export const HeaderContent = styled.div`
-@media (max-width: 550px) {
 	width: 100%;
 	max-width: 100%;
 	height: 100%;
@@ -32,29 +33,45 @@ export const HeaderContent = styled.div`
 	display: flex:
 	justify-content: space-between;
 	align-items: center;
+
+@media (max-width: 540px) {
+
 }
 `
 
 export const MenuNavegacao = styled.ul`
-@media (max-width: 550px) {
+
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 3fr;
 	justify-content: space-around;
 	align-items: center;
-
-	list-style: none;
 
 	width: 100%;
 	height: 100%;
 
-	padding: 0 10px;
-
 	box-sizing: border-box;
+
+	list-style: none;
+
+@media (max-width: 540px) {
+	grid-template-columns: 2fr 1fr 1fr;
+	padding: 0;
+	column-gap: 25px;
 }
 `
 
+export const AreaMenu = styled.div`
+@media (max-width: 540px) {
+	display: none;
+}
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+`
+
 export const MenuNavegacaoMobile = styled.ul`
-@media (max-width: 550px) {
+@media (max-width: 540px) {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -71,7 +88,7 @@ export const MenuNavegacaoMobile = styled.ul`
 `
 
 export const ContainerLogo = styled.div`
-@media (max-width: 550px) {
+@media (max-width: 540px) {
 	width: 100%;
 
 	box-sizing: border-box;
@@ -81,19 +98,21 @@ export const ContainerLogo = styled.div`
 `
 
 export const ContainerButtonAlter = styled.div`
-@media (max-width: 550px) {
-	display: flex;
-	justify-content: center;
+@media (max-width: 540px) {
 	column-gap: 2px;
 
 	width: auto;
 
 	flex: 3;
 }
+
+	display: flex;
+	justify-content: center;
+	column-gap: 5px;
 `
 
 export const MenuItem = styled.li`
-@media (max-width: 550px) {
+@media (max-width: 540px) {
 	font-size: 1.020rem;
 	font-weight: 500;
 
@@ -101,42 +120,81 @@ export const MenuItem = styled.li`
 		transform: scale(1.2);
 		transition: transform 1s;
 	}
-
-	display: none;
 }
+
+@media (max-width: 720px) {
+	
+}
+
+@media (max-width: 960px) {
+	
+}
+
+	&:hover {
+		transform: scale(1.3);
+		transition: transform 1s;
+	}
+
+	column-gap: 10px;
+	color: #FFF;
+
 `
 
 export const MenuLink = styled.a`
 	text-decoration: none;
 	color: #FFF;
+
+	&:hover {
+		color: #000;
+	}
 `
 
 export const Logo = styled.a`
-@media (max-width: 550px) {
+@media (max-width: 540px) {
 	font-size: 1.5rem;
 	font-weight: 700;
 
+	padding: 5px;
+
+	
+}
+	
 	color: #FFF;
 	text-decoration: none;
 
-	padding: 5px;
-
-	flex: 1;
-}
 	font-size: 2rem;
 	font-family: 'Pacifico', cursive;
+
+	&:visited {
+		color: #FFF;
+	}
 `
 
 export const ButtonMobile = styled.a`
-@media (max-width: 550px) {
-	display: inline-block;
-	max-width: 100px;
-	height: auto;
 
-	padding: 5px;
-	color: #FFF;
+	display: none;
+	background-image: url(${buttonMobile});
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	
+	@media (max-width: 540px) {
+		display: inline-block;
 
-	text-decoration: none;
+		width: 47px;
+		height: 27px;
 
-}
+		padding: 5px;
+		color: #FFF;
+
+		text-decoration: none;
+
+	}
+
+	@media (max-width: 720px) {
+		
+	}
+
+	@media (min-width: 960px) {
+		background-image: url(${buttonMobile});
+	}
 `

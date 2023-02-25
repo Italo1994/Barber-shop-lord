@@ -16,7 +16,7 @@ export const ContainerCadastro = styled.div`
 `
 
 export const Content = styled.div`
-@media (max-width: 550px) {
+@media (max-width: 540px) {
 	background-color: rgba(0, 0, 0, 0);
 	
 	width: 90%;

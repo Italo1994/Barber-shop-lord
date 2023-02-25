@@ -14,7 +14,8 @@ Depoimentos,
 AreaDepoimentos, 
 Servicos, 
 AreaServicos, 
-BoxServico } from './styles';
+BoxServico,
+BoxImage } from './styles';
 
 // app components
 import { Header } from '../../components/Header';
@@ -53,29 +54,30 @@ function Home() {
 		<HomeContainer>
 			<Header backgroundColor="#5BBAD5" zIndex="3" />
 			<ContentImage>
-				<Image src={bannerBarber} width={200} height={200} alt="capa 01" borderRadius="100px" />
+				<BoxImage>
+
+				</BoxImage>
 				<ContentButton>
-					<Button value="AGENDAR" width="69%" height="62px" backgroundColor="#5BBAD5" hover="#5BBAD569" color="#FFF" borderRadius="50px" onClick={handleAgendamento} />
+					<Button value="AGENDAR" backgroundColor="#5BBAD5" hover="#5BBAD569" color="#FFF" borderRadius="50px" onClick={handleAgendamento} />
 				</ContentButton>
 			</ContentImage>
 
 			<HomeContent>
 				<ContainerApresentacao>
 					<Title text="SOBRE O PEQUENO LORD" mainTitle="true" size="35px" />
-					<p>
-						O pequeno lord foi criado em 2016, do zero absoluto, com
-						uma forte missão: fazer com que crianças tenham um corte super tranquilo e divertido.
-					</p>
-					<p>
-						Hoje temos o imenso orgulho de, em pouco tempo, ser o melhor salão infantil do Estado Potiguar.
-					</p>
-					<p>
-						Mas isso só foi possibilitado apenas com um trabalho incansável de Tia Dani e Tio Victor focados
-						no segmento de corte infantil. Hoje podemos afirmar que somos referência em toda região.
-					</p>
-					<p>
-						E aí? Você quem escolhe! podemos ajudar sua Lady ou seu Lord?
-					</p>
+					<div>
+						<p>
+							O pequeno lord foi criado em 2016, do zero absoluto, com
+							uma forte missão: fazer com que crianças tenham um corte super tranquilo e divertido.
+						
+							Hoje temos o imenso orgulho de, em pouco tempo, ser o melhor salão infantil do Estado Potiguar.
+						
+							Mas isso só foi possibilitado apenas com um trabalho incansável de Tia Dani e Tio Victor focados
+							no segmento de corte infantil. Hoje podemos afirmar que somos referência em toda região.
+						
+							E aí? Você quem escolhe! podemos ajudar sua Lady ou seu Lord?
+						</p>
+					</div>
 				</ContainerApresentacao>
 			</HomeContent>
 
@@ -135,7 +137,7 @@ function Home() {
 				<Depoimentos>
 					<Title text="DEPOIMENTOS" mainTitle="true" size="35px" />
 					<AreaDepoimentos>
-						<Card nome="Anne" widthImg="100%" heightImg="100%" srcImage={child1} borderRadius="10%" testimony={true} />
+						<Card nome="Anne" widthImg="100%" heightImg="100%" srcImage={child2} borderRadius="10%" testimony={true} />
 						<Card nome="Brad" widthImg="100%" heightImg="100%" srcImage={child2} borderRadius="10%" testimony={true} />
 						<Card nome="Anne" widthImg="100%" heightImg="100%" srcImage={child3} borderRadius="10%" testimony={true} />
 						<Card nome="Brad" widthImg="100%" heightImg="100%" srcImage={child4} borderRadius="10%" testimony={true} />
@@ -147,6 +149,8 @@ function Home() {
 				<Title text="LOCALIZAÇÃO" />
 				<Map />
 			</HomeContent>
+
+			<Separator />
 
 			<Footer backgroundColor="#5BBAD5" />
 		</HomeContainer>

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.div`
 	
-	@media (max-width: 550px) {
+	@media (max-width: 540px) {
 		width: 100%;
 		min-height: 150px;
 		

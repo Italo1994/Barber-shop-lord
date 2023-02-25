@@ -19,7 +19,7 @@ function Footer({ backgroundColor, color }) {
 					<a href="https://api.whatsapp.com/send?phone=5584998183614" target="_blank"> <FaWhatsapp size={27} color="#2EB600" /></a>
 				</AreaSocial>
 				
-				<p>Desenvolvido por <span>Italo Hortiz</span></p>
+				<p>&copy; 2023 Copyright. <span>italohortiz.com</span></p>
 			</FooterContent>
 		</FooterContainer>
 	);
