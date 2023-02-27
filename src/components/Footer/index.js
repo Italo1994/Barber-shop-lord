@@ -8,11 +8,11 @@ function Footer({ backgroundColor, color }) {
 	return(
 		<FooterContainer backgroundColor={backgroundColor} >
 			<FooterContent>
-				<Logo href="#">Pequeno Lord</Logo>
-				<MenuLink href="#">Início</MenuLink>
-				<MenuLink href="/cortes">Cortes</MenuLink>
-				<MenuLink href="#">Agendamento</MenuLink>
-				<MenuLink href="#">Contato</MenuLink>
+				<Logo href="/">Pequeno Lord</Logo>
+				<MenuLink color="#FFF" href="/">Início</MenuLink>
+				<MenuLink color="#FFF" href="/cortes">Cortes</MenuLink>
+				<MenuLink color="#FFF" href="/agendamento">Agendamento</MenuLink>
+				<MenuLink color="#FFF" href="#">Contato</MenuLink>
 
 				<AreaSocial>
 					<a href="https://www.instagram.com/pequenolordoficial/" target="_blank"> <FaInstagram size={27} color="#C435A7" /></a>

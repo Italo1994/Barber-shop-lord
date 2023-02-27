@@ -87,19 +87,19 @@ function Home() {
 					<AreaServicos>
 						
 						<BoxServico>
-							<HiScissors size={50} color="#9DF1DF" />
+							<HiScissors size={50} color="#FAA916" />
 							<span>Corte Especializado e Interativo</span>
 						</BoxServico>
 						<BoxServico id="middle-icon">
-							<GiPopcorn size={50} color="#9DF1DF" />
+							<GiPopcorn size={50} color="#FAA916" />
 							<span>Pirulito e Pipoca</span>
 						</BoxServico>
 						<BoxServico>
-							<FaGamepad size={50} color="#9DF1DF" />
+							<FaGamepad size={50} color="#FAA916" />
 							<span>Games na hora do corte</span>
 						</BoxServico>
 						<BoxServico>
-							<MdToys size={50} color="#9DF1DF" />
+							<MdToys size={50} color="#FAA916" />
 							<span>Brinquedos e Parquinho no final</span>
 						</BoxServico>
 					</AreaServicos>
@@ -149,8 +149,6 @@ function Home() {
 				<Title text="LOCALIZAÇÃO" />
 				<Map />
 			</HomeContent>
-
-			<Separator />
 
 			<Footer backgroundColor="#5BBAD5" />
 		</HomeContainer>

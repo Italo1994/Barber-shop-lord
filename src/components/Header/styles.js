@@ -61,13 +61,22 @@ export const MenuNavegacao = styled.ul`
 `
 
 export const AreaMenu = styled.div`
-@media (max-width: 540px) {
-	display: none;
-}
+	@media (max-width: 540px) {
+		display: none;
+	}
 
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+`
+
+export const AreaSubmenu = styled.div`
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 100px;
 `
 
 export const MenuNavegacaoMobile = styled.ul`
@@ -112,23 +121,23 @@ export const ContainerButtonAlter = styled.div`
 `
 
 export const MenuItem = styled.li`
-@media (max-width: 540px) {
-	font-size: 1.020rem;
-	font-weight: 500;
+	@media (max-width: 540px) {
+		font-size: 1.020rem;
+		font-weight: 500;
 
-	&:hover {
-		transform: scale(1.2);
-		transition: transform 1s;
+		&:hover {
+			transform: scale(1.2);
+			transition: transform 1s;
+		}
 	}
-}
 
-@media (max-width: 720px) {
-	
-}
+	@media (max-width: 720px) {
+		
+	}
 
-@media (max-width: 960px) {
-	
-}
+	@media (min-width: 960px) {
+		color: #000;
+	}
 
 	&:hover {
 		transform: scale(1.3);
@@ -136,13 +145,19 @@ export const MenuItem = styled.li`
 	}
 
 	column-gap: 10px;
-	color: #FFF;
 
 `
 
 export const MenuLink = styled.a`
 	text-decoration: none;
-	color: #FFF;
+
+	@media (min-width: 960px) {
+		color: #FFF;
+	}
+
+	@media (max-width: 540px) {
+		color: ${props => props.color};
+	}
 
 	&:hover {
 		color: #000;

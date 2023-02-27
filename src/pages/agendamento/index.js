@@ -25,7 +25,7 @@ function Agendamento() {
 			<Header backgroundColor="#5BBAD5" zIndex="0" />
 			
 			<AgendamentoContent>
-				<Title text="Agendamento" align="left" />
+				<Title text="AGENDAMENTO" align="left" />
 				<ContainerBarbeiro>
 					<Card nome="Tio Lucas" widthImg="100%" heightImg="100%" srcImage={tioLucas} borderRadius="" direction="row" barber={true} />
 					<Card nome="Tio Rivan" widthImg="100%" heightImg="100%" srcImage={tioRivan} borderRadius="" barber={true} />

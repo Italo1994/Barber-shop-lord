@@ -10,9 +10,9 @@ export const HomeContainer = styled.main`
 export const HomeContent = styled.div`
 
 	margin-bottom: 100px;
+	width: 100%;
 
 	@media (max-width: 540px) {
-		width: 100%;
 		height: auto;
 
 		margin: 0 auto;
@@ -162,6 +162,15 @@ export const BoxServico = styled.div`
 
 	color: #000;
 
+	&:hover {
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+		transition: all .8s;
+	}
+
 	@media (max-width: 540px) {
 		width: 100%;
 		height: 100%;
@@ -178,15 +187,6 @@ export const BoxServico = styled.div`
 			color: #000;
 		}
 
-		&:hover {
-			-moz-transform: rotate(360deg);
-			-webkit-transform: rotate(360deg);
-			-o-transform: rotate(360deg);
-			-ms-transform: rotate(360deg);
-			transform: rotate(360deg);
-			transition: all .8s;
-		}
-
 	}
 
 	@media (min-width: 960px) {
@@ -195,8 +195,9 @@ export const BoxServico = styled.div`
 `
 
 export const Depoimentos = styled.div`
+	width: 100%;
+
 	@media (max-width: 540px) {
-		width: 100%;
 		min-height: 500px;
 		height: 100%;
 
@@ -210,14 +211,17 @@ export const Depoimentos = styled.div`
 `
 
 export const AreaDepoimentos = styled.div`
-@media (max-width: 540px) {
-	max-width: 320px;
-	height: auto;
-
-	padding: 5px;
-
+	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
-}
+	grid-template-columns: repeat(4, 1fr);
+
+	@media (max-width: 540px) {
+		max-width: 320px;
+		height: auto;
+
+		padding: 5px;
+
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+	}
 `
