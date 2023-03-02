@@ -38,7 +38,6 @@ import logo from '../../assets/logo.png';
 
 // font awesome - icons
 import { HiScissors } from 'react-icons/hi';
-import { FaPumpSoap } from 'react-icons/fa';
 import { FaGamepad } from 'react-icons/fa';
 import { GiPopcorn } from 'react-icons/gi';
 import { MdToys } from 'react-icons/md';
@@ -58,7 +57,7 @@ function Home() {
 
 				</BoxImage>
 				<ContentButton>
-					<Button value="AGENDAR" backgroundColor="#5BBAD5" hover="#5BBAD569" color="#FFF" borderRadius="50px" onClick={handleAgendamento} />
+					<Button value="AGENDAR" backgroundColor="#5BBAD5" hover="rgba(0, 0, 0, .15)" color="#FFF" borderRadius="50px" onClick={handleAgendamento} />
 				</ContentButton>
 			</ContentImage>
 

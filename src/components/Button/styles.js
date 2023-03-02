@@ -13,11 +13,11 @@ export const ButtonContainer = styled.button`
 
 		font-size: 1.125rem;
 		font-weight: 600;
+	}
 
-		&:hover {
-			background-color: ${props => props.hover};
-			cursor: pointer;
-		}
+	&:hover {
+		background-color: ${props => props.hover};
+		cursor: pointer;
 	}
 `
 

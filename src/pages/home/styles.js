@@ -9,7 +9,7 @@ export const HomeContainer = styled.main`
 
 export const HomeContent = styled.div`
 
-	margin-bottom: 100px;
+	padding-bottom: 100px;
 	width: 100%;
 
 	@media (max-width: 540px) {
@@ -18,6 +18,10 @@ export const HomeContent = styled.div`
 		margin: 0 auto;
 
 		position: relative;
+	}
+
+	@media (min-width: 960px) {
+		height: 100vh;
 	}
 `
 
@@ -106,6 +110,11 @@ export const Title = styled.h2`
 `
 
 export const ContainerApresentacao = styled.section`
+	display: flex;
+	flex-direction: column;
+	align-items: space-around;
+	justify-content: center;
+
 	div {
 		max-width: 700px;
 		margin: 0 auto;
@@ -120,24 +129,28 @@ export const ContainerApresentacao = styled.section`
 		width: 100%;
 		padding: 50px;
 	}
+
+	@media (min-width: 960px) {
+		height: 100%;
+	}
 `
 
 export const Servicos = styled.div`
-@media (max-width: 540px) {
 	width: 100%;
-	min-height: 500px;
-}
+
+	@media (max-width: 540px) {
+		min-height: 500px;
+	}
+
+	@media (min-width: 960px) {
+		height: 100%;
+		
+	}
 `
 
 export const AreaServicos = styled.div`
 	
 	display: grid;
-
-	@media (min-width: 960px) {
-		grid-template-columns: repeat(4, 1fr);
-		justify-content: space-between;
-		align-items: center;
-	}
 
 	@media (max-width: 540px) {
 		min-width: 320px;
@@ -150,6 +163,14 @@ export const AreaServicos = styled.div`
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(2, 1fr);
 		row-gap: 25px;
+	}
+
+	@media (min-width: 960px) {
+		grid-template-columns: repeat(4, 1fr);
+		justify-content: center;
+		align-items: center;
+
+		height: 100%;
 	}
 `
 

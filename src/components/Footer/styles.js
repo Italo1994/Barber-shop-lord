@@ -1,17 +1,14 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
-@media (max-width: 540px) {
+	
 	width: 100%;
-	min-height: 350px;
-
 	background-color: ${props => props.backgroundColor ? props.backgroundColor : "#5BBAD5"};
-	display: grid;
+
+	display: flex;
 	justify-content: center;
 
 	box-sizing: border-box;
-
-	padding: 20px 0;
 
 	p {
 		padding-top: 10px;
@@ -23,11 +20,18 @@ export const FooterContainer = styled.footer`
 			font-style: italic;
 		}
 	}
-}
+
+	@media (max-width: 540px) {
+		min-height: 350px;
+
+		justify-content: center;
+
+		padding: 20px 0;
+	}
 `
 
 export const FooterContent = styled.div`
-@media (max-width: 540px) {
+	
 	width: 100%;
 	height: 100%;
 
@@ -37,22 +41,57 @@ export const FooterContent = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	row-gap: 30px;
-}
+	row-gap: 69px;
+
+	@media (min-width: 960px) {
+		padding: 20px 69px;
+	}
+`
+
+export const WrapperFooter = styled.div`
+	width: 100%;
+	display: flex;
+
+
+	justify-content: space-around;
+	align-items: center;
+
+	@media (max-width: 540px) {
+		flex-direction: column;
+		row-gap: 25px;
+	}
+`
+
+export const AreaNavegacao = styled.div`
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	row-gap: 25px;
 `
 
 export const AreaSocial = styled.div`
 	width: 100%;
 	padding: 10px;
+	margin-top: 25px;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	column-gap: 15px;
 
 	a {
 		text-decoration: none;
 		color: #FFF;
+	}
+
+	@media (max-width: 540px) {
+		column-gap: 15px;
+	}
+
+	@media (min-width: 960px) {
+		column-gap: 25px;
 	}
 
 `
