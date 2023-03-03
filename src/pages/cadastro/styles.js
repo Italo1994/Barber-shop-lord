@@ -16,15 +16,11 @@ export const ContainerCadastro = styled.div`
 `
 
 export const Content = styled.div`
-@media (max-width: 540px) {
-	background-color: rgba(0, 0, 0, 0);
 	
-	width: 90%;
-	min-height: 100vh;
-
 	margin: 11vh auto;
-	padding: 40px 20px;
-	
+	padding: 50px 20px 0 20px;
+	min-height: 100vh;
+	width: 500px;
 
 	span {
 		text-align: center;
@@ -32,10 +28,17 @@ export const Content = styled.div`
 		width: 100%;
 	}
 
-	h1 {
+	h2 {
 		text-align: center;
 		color: #FFF;
 		margin-bottom: 69px;
 	}
-}
+
+	@media (max-width: 540px) {
+		background-color: rgba(0, 0, 0, 0);
+		
+		width: 90%;
+
+		padding: 40px 20px;
+	}
 `

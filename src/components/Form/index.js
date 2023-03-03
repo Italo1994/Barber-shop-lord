@@ -1,15 +1,20 @@
 import { useNavigate } from 'react-router-dom';
 
+import { useState } from 'react';
+
 import { FormContainer, Title, AreaButton, TextLink } from './styles';
 
 import { Input } from '../Input';
 import { Button } from '../Button';
 
-import $ from 'jquery';
+import Alert from 'react-bootstrap/Alert';
 
 const Form = ({hasLink, color, login, cadastro}) => {
 
 	const navigate = useNavigate();
+
+	const [msgAlert, setMsgAlert] = useState("");
+	const [msgSuccess, setMsgSuccess] = useState("");
 
 	const onSubmit = (e) => {
 		e.preventDefault();
@@ -22,23 +27,44 @@ const Form = ({hasLink, color, login, cadastro}) => {
 			senha: e.target.elements.senha.value
 		}
 
-		console.log(dadosUsuario);
+		if(dadosUsuario.nome === "") {
+			setMsgAlert("Por favor, preencha o nome");
+			return false;
+		}
+		else if(dadosUsuario.email === "") {
+			setMsgAlert("Por favor, preencha o e-mail");
+			return false;
+		}
+		else if(dadosUsuario.telefone === "") {
+			setMsgAlert("Por favor, preencha o telefone");
+			return false;
+		}
+		else if(dadosUsuario.usuario === "") {
+			setMsgAlert("Por favor, preencha o usuário");
+			return false;
+		}
+		else if(dadosUsuario.senha === "") {
+			setMsgAlert("Por favor, preencha a senha");
+			return false;
+		}
+		else {
+			setMsgAlert("");
+			console.log(dadosUsuario);
+			setMsgSuccess("Usuário cadastrado com sucesso");
 
-		alert("Usuário cadastrado com sucesso!");
-
-		navigate('/login');
+			setTimeout( function() {
+				navigate('/login');
+				setMsgSuccess("");
+			}, 4000);
+		}
 	}
 
 	const redirecionarCadastro = () => {
 		navigate('/cadastro');
 	}
-
-	$(document).ready(function() {
-		$(window).onload(function() {
-			$("FormContainer").fadeIn("slow");
-		})
-	})
 	
+
+
 	if(login) {
 		return(
 			<FormContainer>
@@ -69,6 +95,19 @@ const Form = ({hasLink, color, login, cadastro}) => {
 			<Input type="text" placeholder="Usuário" name="usuario" />
 			<br/>
 			<Input type="password" placeholder=" Senha" name="senha" />
+
+			{msgAlert !== "" &&
+				<Alert variant="warning" style={{ width: '100%' }} >
+					{msgAlert}
+				</Alert>
+			}
+
+			{msgSuccess !== "" &&
+				<Alert variant="success" style={{ width: '100%' }} >
+					{msgSuccess}
+				</Alert>
+			}
+
 			<AreaButton>
 				<Button type="submit" value="CADASTRAR" width="50%" height="40px" borderRadius="10px" />
 			</AreaButton>
