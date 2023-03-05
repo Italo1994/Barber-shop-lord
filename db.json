@@ -1,0 +1,42 @@
+{
+  "clientes": [
+    {
+      "nome": "Italo",
+      "sobrenome": "Hortiz",
+      "email": "italodev@gmail.com",
+      "telefone": "84999999999",
+      "usuario": "italoti",
+      "senha": "12345",
+      "id": 1
+    },
+    {
+      "nome": "Jane",
+      "sobrenome": "Mayer",
+      "email": "janemayer01@gmail.com",
+      "telefone": "84912345678",
+      "usuario": "jane0102",
+      "senha": "1234567",
+      "id": 2
+    }
+  ],
+  "cabeleireiros": [
+    {
+      "id": 1,
+      "nome": "Tia Dani",
+      "sobrenome": "",
+      "email": "tiadani2023@gmail.com",
+      "telefone": "84998999192",
+      "usuario": "dani123",
+      "senha": 12345
+    },
+    {
+      "id": 2,
+      "nome": "Tio Rivan",
+      "sobrenome": "",
+      "email": "tiorivan2023@gmail.com",
+      "telefone": "84998999899",
+      "usuario": "rivan123",
+      "senha": 54321
+    }
+  ]
+}

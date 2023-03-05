@@ -2,19 +2,26 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.div`
 	
+	width: 100%;
+
+	display: flex;
+	flex-direction: ${props => props.direction ? props.direction : "column"};
+	align-items: center;
+
+	-webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
+		
+	border: 1px solid #B3B3B3;
+
+	&:hover {
+		-webkit-box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.75);
+	}
+	
 	@media (max-width: 540px) {
-		width: 100%;
 		min-height: 150px;
-		
-
-		display: flex;
-		flex-direction: ${props => props.direction ? props.direction : "column"};
-
-		-webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
-		-moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
-		box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
-		
-		border: 1px solid #B3B3B3;
 
 		p {
 			color: #FFF;
@@ -39,10 +46,10 @@ export const CardImage = styled.div`
 `
 
 export const CardDepoimento = styled.div`
+	
 	width: 100%;
-	height: auto;
 
-	padding: 10px 10px;
+	padding: 10px;
 
 	display: flex;
 	flex-direction: column;
@@ -53,7 +60,9 @@ export const CardDepoimento = styled.div`
 	background-color: #5BBAD5;
 	color: #000;
 
-	border-top: 1px solid #F18836;
+	p {
+		color: #FFF;
+	}
 
 	div {
 		display: flex;
@@ -63,6 +72,11 @@ export const CardDepoimento = styled.div`
 			display: inline-block;
 			flex: 1;
 		}
+	}
+
+	@media (min-width: 960px) {
+		width: 100%;
+		min-height: 150px;
 	}
 `
 

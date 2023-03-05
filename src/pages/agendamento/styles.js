@@ -32,19 +32,29 @@ export const AgendamentoContent = styled.div`
 export const ContainerBarbeiro = styled.div`
 	width: 90%;
 	margin: 0 auto;
-	min-height: 400px;
-	
-	padding-top: 10px;
 
 	display: grid;
-	grid-template-columns: 1fr;
-	align-items: flex-start;
-	row-gap: 20px;
 
-	box-sizing: border-box;
-
-	div {
+	@media (max-width: 540px) {
+		min-height: 400px;
 		
-		flex: 1;
+		padding-top: 10px;
+
+		grid-template-columns: 1fr;
+		align-items: flex-start;
+		row-gap: 20px;
+
+		box-sizing: border-box;
+
+		div {
+			
+			flex: 1;
+		}
+	}
+
+	@media (min-width: 960px) {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
+		row-gap: 30px;
 	}
 `

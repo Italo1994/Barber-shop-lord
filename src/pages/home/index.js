@@ -82,7 +82,7 @@ function Home() {
 
 			<HomeContent>
 				<Servicos>
-				<Title text="O QUE PROPORCIONAMOS?" mainTitle="true" size="35px" />
+					<Title text="O QUE PROPORCIONAMOS?" mainTitle="true" size="35px" />
 					<AreaServicos>
 						
 						<BoxServico>

@@ -41,7 +41,7 @@ function Card({nome, widthImg, heightImg, srcImage, borderRadius, direction, tes
 				</CardImage>
 				<CardDepoimento>
 					<p><strong>{nome}</strong></p>
-					<Button value="Ver horários" onClick={buscarHorarios} width="100%" height="8vh" backgroundColor="#FFD700" color="#000" borderRadius="5px" />
+					<Button value="Ver Horários" onClick={buscarHorarios} width="100%" height="8vh" backgroundColor="#FFD700" color="#000" hover="rgba(0, 0, 0, .15)" borderRadius="5px" />
 				</CardDepoimento>
 			</CardContainer>
 		);

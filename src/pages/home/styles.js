@@ -9,7 +9,7 @@ export const HomeContainer = styled.main`
 
 export const HomeContent = styled.div`
 
-	padding-bottom: 100px;
+	padding-bottom: 20px;
 	width: 100%;
 
 	@media (max-width: 540px) {
@@ -21,7 +21,7 @@ export const HomeContent = styled.div`
 	}
 
 	@media (min-width: 960px) {
-		height: 100vh;
+		min-height: 100vh;
 	}
 `
 
@@ -115,36 +115,42 @@ export const ContainerApresentacao = styled.section`
 	align-items: space-around;
 	justify-content: center;
 
+	padding: 50px;
+
 	div {
 		max-width: 700px;
+		height: 100%;
 		margin: 0 auto;
 	}
 
 	p {
 		color: #000;
 		text-align: justify;
+		line-height: 2.5rem;
 	}
 
 	@media (max-width: 540px) {
 		width: 100%;
-		padding: 50px;
+		
 	}
 
 	@media (min-width: 960px) {
 		height: 100%;
+		row-gap: 100px;
 	}
 `
 
 export const Servicos = styled.div`
 	width: 100%;
-
+	display: grid;
+	
 	@media (max-width: 540px) {
 		min-height: 500px;
 	}
 
 	@media (min-width: 960px) {
 		height: 100%;
-		
+		row-gap: 100px;
 	}
 `
 
@@ -217,24 +223,38 @@ export const BoxServico = styled.div`
 
 export const Depoimentos = styled.div`
 	width: 100%;
+	min-height: 500px;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 50px;
+
+	padding: 30px 0;
+
+	align-items: center;
 
 	@media (max-width: 540px) {
 		min-height: 500px;
 		height: 100%;
 
-		padding: 30px 0;
-
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		
 		row-gap: 20px;
 	}
 `
 
 export const AreaDepoimentos = styled.div`
-	width: 100%;
+	max-width: 1020px;
+	height: auto;
+
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
+
+	justify-content: center;
+	align-items: center;
+	column-gap: 50px;
+	row-gap: 25px;
 
 	@media (max-width: 540px) {
 		max-width: 320px;
