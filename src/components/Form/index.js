@@ -99,33 +99,51 @@ const Form = ({hasLink, color, login, cadastro}) => {
 				setClientes(data)
 			})
 			.catch( (err) => console.log(err))
+
+			setTimeout( function() {
+				navigate('/login');
+				setMsgSuccess("");
+			}, 3500);
 		}
-
-
-		setTimeout( function() {
-			navigate('/login');
-			setMsgSuccess("");
-		}, 3500);
 
 	}
 
 
 	const validaLogin = (e) => {
+		const dadosUsuarioLogin = {
+			usuario: e.target.elements.usuarioLogin.value,
+			senha: e.target.elements.senhaLogin.value
+		}
 
+		if(dadosUsuarioLogin.usuario === "") {
+			setMsgAlert("Nenhum usuário informado");
+			return false;
+		}
+		else if(dadosUsuarioLogin.senha === "") {
+			setMsgAlert("Nenhuma senha informada");
+			return false;
+		}
+		else {
+			setMsgSuccess("Usuário logado com sucesso");
+			setTimeout( function() {
+				setMsgSuccess("");
+			}, 3500);
+		}
+		console.log(dadosUsuarioLogin);
 	}
+
 
 	const redirecionarCadastro = () => {
 		navigate('/cadastro');
 	}
 	
 
-
 	if(login) {
 		return(
 			<FormContainer onSubmit={validaLogin} >
 				<Title>Faça login</Title>
-				<Input type="text" placeholder="Usuário" />
-				<Input type="password" placeholder="Senha" />
+				<Input name="usuarioLogin" type="text" placeholder="Usuário" />
+				<Input name="senhaLogin" type="password" placeholder="Senha" />
 				<AreaButton>
 					<Button type="submit" value="ENTRAR" width="50%" height="40px" borderRadius="5px" hover="rgba(0, 0, 0, .2)" />
 				</AreaButton>
