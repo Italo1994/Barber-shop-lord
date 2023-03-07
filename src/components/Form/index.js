@@ -140,12 +140,12 @@ const Form = ({hasLink, color, login, cadastro}) => {
 
 	if(login) {
 		return(
-			<FormContainer onSubmit={validaLogin} >
+			<FormContainer>
 				<Title>Faça login</Title>
 				<Input name="usuarioLogin" type="text" placeholder="Usuário" />
 				<Input name="senhaLogin" type="password" placeholder="Senha" />
 				<AreaButton>
-					<Button type="submit" value="ENTRAR" width="50%" height="40px" borderRadius="5px" hover="rgba(0, 0, 0, .2)" />
+					<Button type="button" value="ENTRAR" onClick={validaLogin} width="50%" height="40px" borderRadius="5px" hover="rgba(0, 0, 0, .2)" />
 				</AreaButton>
 				<TextLink href="#"><span id="esqueceuSenha">Esqueceu a senha?</span></TextLink>
 				<TextLink href="#" onClick={redirecionarCadastro}>Ainda não possui uma conta? <span>Cadastre-se</span></TextLink>

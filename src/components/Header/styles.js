@@ -70,13 +70,21 @@ export const AreaMenu = styled.div`
 	align-items: center;
 `
 
+export const OpcoesEntrada = styled.div`
+	display: flex;
+	align-items: center;
+	column-gap: 15px;
+
+	color: #FFF;
+`
+
 export const AreaSubmenu = styled.div`
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	row-gap: 100px;
+	row-gap: 69px;
 `
 
 export const MenuNavegacaoMobile = styled.ul`

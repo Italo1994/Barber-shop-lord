@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import { useState } from 'react';
 
-import { HeaderContainer, HeaderContent, MenuNavegacao, MenuNavegacaoMobile, ContainerLogo, ContainerButtonAlter, Logo, MenuItem, MenuLink, ButtonMobile, AreaMenu, AreaSubmenu } from './styles';
+import { HeaderContainer, HeaderContent, MenuNavegacao, MenuNavegacaoMobile, ContainerLogo, ContainerButtonAlter, Logo, MenuItem, MenuLink, ButtonMobile, AreaMenu, AreaSubmenu, OpcoesEntrada } from './styles';
 
 import { Image } from '../Image';
 import { Button } from '../Button';
@@ -43,6 +43,11 @@ function Header({ backgroundColor, color, zIndex}) {
 						<MenuItem><MenuLink href="/cortes">Cortes</MenuLink></MenuItem>
 						<MenuItem><MenuLink href="/agendamento">Agendamento</MenuLink></MenuItem>
 						<MenuItem><MenuLink href="#">Contato</MenuLink></MenuItem>
+						<OpcoesEntrada>
+							<MenuItem><MenuLink href="/login">Login</MenuLink> </MenuItem>
+							/
+							<MenuItem><MenuLink href="/cadastro">Cadastro</MenuLink> </MenuItem>
+						</OpcoesEntrada>
 					</AreaMenu>
 
 
@@ -61,6 +66,11 @@ function Header({ backgroundColor, color, zIndex}) {
 								<MenuItem><MenuLink color="#000" href="/cortes">Cortes</MenuLink></MenuItem>
 								<MenuItem><MenuLink color="#000" href="/agendamento">Agendamento</MenuLink></MenuItem>
 								<MenuItem><MenuLink color="#000" href="#">Contato</MenuLink></MenuItem>
+								<OpcoesEntrada>
+									<MenuItem><MenuLink href="/login">Login</MenuLink> </MenuItem>
+									/
+									<MenuItem><MenuLink href="/cadastro">Cadastro</MenuLink> </MenuItem>
+								</OpcoesEntrada>
 							</AreaSubmenu>
 				        </Modal.Body>
 				      </Modal>
