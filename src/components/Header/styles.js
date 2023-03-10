@@ -53,11 +53,11 @@ export const MenuNavegacao = styled.ul`
 
 	list-style: none;
 
-@media (max-width: 540px) {
-	grid-template-columns: 2fr 1fr 1fr;
-	padding: 0;
-	column-gap: 25px;
-}
+	@media (max-width: 540px) {
+		grid-template-columns: 2fr 1fr 1fr;
+		padding: 0;
+		column-gap: 25px;
+	}
 `
 
 export const AreaMenu = styled.div`
@@ -115,13 +115,13 @@ export const ContainerLogo = styled.div`
 `
 
 export const ContainerButtonAlter = styled.div`
-@media (max-width: 540px) {
-	column-gap: 2px;
+	@media (max-width: 540px) {
+		column-gap: 2px;
 
-	width: auto;
+		width: auto;
 
-	flex: 3;
-}
+		flex: 3;
+	}
 
 	display: flex;
 	justify-content: center;
@@ -148,7 +148,7 @@ export const MenuItem = styled.li`
 	}
 
 	&:hover {
-		transform: scale(1.3);
+		transform: scale(1.1);
 		transition: transform 1s;
 	}
 

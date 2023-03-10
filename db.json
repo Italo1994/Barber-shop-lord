@@ -26,6 +26,15 @@
       "usuario": "maryjanewatson2001",
       "senha": "7654321",
       "id": 3
+    },
+    {
+      "nome": "Marshal",
+      "sobrenome": "Bennet",
+      "email": "marshalmotocros@gmail.com",
+      "telefone": "85987612220",
+      "usuario": "marshaldev",
+      "senha": "98765",
+      "id": 4
     }
   ],
   "cabeleireiros": [
