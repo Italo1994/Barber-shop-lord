@@ -22,7 +22,7 @@ export const FooterContainer = styled.footer`
 	}
 
 	@media (max-width: 540px) {
-		min-height: 350px;
+		min-height: 300px;
 
 		justify-content: center;
 
@@ -41,7 +41,7 @@ export const FooterContent = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	row-gap: 69px;
+	
 
 	@media (min-width: 960px) {
 		padding: 20px 69px;
@@ -51,13 +51,14 @@ export const FooterContent = styled.div`
 export const WrapperFooter = styled.div`
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 
 
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 
 	@media (max-width: 540px) {
-		flex-direction: column;
+		
 		row-gap: 25px;
 	}
 `
@@ -78,12 +79,18 @@ export const AreaSocial = styled.div`
 	margin-top: 25px;
 
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 
 	a {
 		text-decoration: none;
 		color: #FFF;
+	}
+
+	div {
+		display: flex;
+		column-gap: 20px;
 	}
 
 	@media (max-width: 540px) {
@@ -94,4 +101,12 @@ export const AreaSocial = styled.div`
 		column-gap: 25px;
 	}
 
+`
+
+export const Copyright = styled.div`
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 `

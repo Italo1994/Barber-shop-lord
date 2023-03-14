@@ -124,6 +124,23 @@ const Form = ({hasLink, color, login, cadastro}) => {
 			return false;
 		}
 		else {
+
+			fetch("http://localhost:5000/clientes", 
+			{
+				method: "GET",
+				headers: {
+					"Content-Type": "application/json"
+				}
+			}
+			)
+			.then( (response) => response.json() )
+			.then( (data) => {
+				console.log(data);
+			})
+			.catch( (err) => console.log(err))
+
+
+
 			setMsgSuccess("Usuário logado com sucesso");
 			setTimeout( function() {
 				setMsgSuccess("");

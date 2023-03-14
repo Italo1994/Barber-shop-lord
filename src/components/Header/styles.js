@@ -6,7 +6,7 @@ export const HeaderContainer = styled.header`
 	width: 100%;
 	max-width: 100%;
 	
-	height: 10vh;
+	height: 15vh;
 	background-color: ${props => props.backgroundColor ? props.backgroundColor : "#5BBAD5" };
 
 	display: flex;
@@ -21,6 +21,7 @@ export const HeaderContainer = styled.header`
 @media (max-width: 540px) {
 	position: fixed;
 	top: 0;
+	height: 12vh;
 }
 
 `

@@ -77,33 +77,33 @@ function TabelaHorarios( {nome} ) {
 			</Turnos>
 			<TabelaContent>
 
-				<Button value="09:00" onClick={handleHora} width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
-				<Button value="12:00" onClick={handleHora} width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
-				<Button value="15:00" onClick={handleHora} width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
+				<Button value="09:00" onClick={handleHora} width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .7)" />
+				<Button value="12:00" onClick={handleHora} width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
+				<Button value="15:00" onClick={handleHora} width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
 
-				<Button value="09:30" onClick={handleHora} width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
-				<Button value="12:30" width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
-				<Button value="15:30" width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
+				<Button value="09:30" onClick={handleHora} width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
+				<Button value="12:30" width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
+				<Button value="15:30" width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
 
-				<Button value="10:00" width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
-				<Button value="13:00" width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
-				<Button value="16:00" width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
+				<Button value="10:00" width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
+				<Button value="13:00" width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
+				<Button value="16:00" width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
 
-				<Button value="10:30" width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
-				<Button value="13:30" width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
-				<Button value="16:30" width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
+				<Button value="10:30" width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
+				<Button value="13:30" width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
+				<Button value="16:30" width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
 
-				<Button value="11:00" width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
-				<Button value="14:00" width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
-				<Button value="17:00" width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
+				<Button value="11:00" width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
+				<Button value="14:00" width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
+				<Button value="17:00" width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
 
-				<Button value="11:30" width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
-				<Button value="14:30" width="100%" height="69px" borderRadius="20px" backgroundColor="#00060" hover="rgba(0,255,0, .9)" />
+				<Button value="11:30" width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
+				<Button value="14:30" width="100%" height="69px" borderRadius="20px" backgroundColor="#0F0" hover="rgba(0,255,0, .9)" />
 				
 			</TabelaContent>
 
 			<ContainerSolicitacao>
-				<Button value="REALIZAR AGENDAMENTO" onClick={showData} width="269px" height="69px" borderRadius="10px" backgroundColor="#FFD700" />
+				<Button value="REALIZAR AGENDAMENTO" onClick={showData} width="269px" height="69px" borderRadius="10px" backgroundColor="#FFD700" hover="rgba(255, 215, 0, .9)" />
 			</ContainerSolicitacao>
 		</ContainerTabelaHorarios>
 	);
